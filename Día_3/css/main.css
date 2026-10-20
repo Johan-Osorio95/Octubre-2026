@@ -1,0 +1,54 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.divExterno{
+    width: 200px;
+    height: 200px;
+    background-color: black; 
+    display: flex; 
+}
+.divInterno{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    margin:auto;
+}
+
+.boxModelExterno{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    padding: 50px;
+    border: 5px solid rgb(18, 18, 110);
+    display: flex;
+}
+.boxModelInterno{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(0, 170, 255);
+    margin: 50px;
+    border: 5px dotted rgb(104, 215, 225); 
+    margin: auto;
+}
+
+.centradoExterno{
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    padding: 50px;
+    border: 10px double rgb(99, 226, 118);
+    display:flex;
+}
+.centradoInterno{    
+    width: 50%;
+    height: 50%;
+    background-color: rgb(106, 61, 36);
+    border: 5px dashed rgb(172, 232, 53);
+    margin: auto;    
+}
+

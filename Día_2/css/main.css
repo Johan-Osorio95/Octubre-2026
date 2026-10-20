@@ -1,0 +1,45 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+div {/**/
+    border: 3px solid rgb(64, 29, 84); /*Esta línea modifica el borde y color del elemento que esta dentro del div*/
+    margin: 20px;/*Esta línea modifica la distancia que hay entre la margen de los elementos que estan dentro del div*/
+    padding: 20px;/*El (padding) es el espacio interior de un elemento: la distancia entre el contenido (el texto) y el borde.*/
+    border-radius: 20px;/*Esta línea modifica la esquina del borde de los elementos que hay dentro del div*/
+    box-shadow: 2px 2px 2px black;/*Esta línea agrega sombra detrás de los elementos que hay dentro del div: 2px(derecha) 2px(abajo) 2px(todos)*/
+    
+}
+
+.containerUno {/*Con un punto conectamos con las clases*/
+    background-color: rgb(37, 127, 230);/*Y aquí cambiamos el color del fondo de lo que tengamos en (containerUno*/
+}
+
+.containerDos {
+    background-color: rgb(87, 184, 254);
+}
+
+.containerTres {
+    background-color: rgb(106, 189, 248);
+}
+
+p>span {/*El (span) es una etiqueta, y las etiquetas no necesitan punto para que Css se comunique con ella.*/
+    color: red;/*Aquí cambiamos de color lo que hay entre <span>...</span>*/
+    font-weight: bold;/*Esta línea implementa la fuente del texto que hay entre el <span>*/
+}
+
+table {
+    width: 100%;/*Con esta línea implementamos el ancho de los datos que tenemos dentro de la tabla.*/
+    border-collapse: collapse;/*Esta línea hace que los bordes de las celdas de una tabla se fusionen en una sola línea*/
+    margin-top: 10px;/*Esta línea implementamos la separación que habrá entre la margen y los datos dentro de la tabla.*/
+}
+
+td, th {/*td y th son dos etiquetas HTML de las celdas de una tabla:*/
+    border: 3px solid blue;/*Esta línea implementa el grosor y color de la línea de las filas y columnas*/
+    padding: 10px;/*El (padding) es el espacio interior de un elemento: la distancia entre el contenido (el texto) y el borde.*/
+    text-align: center;/*Con esta línea centramos los datos que tenemos dentro de la tabla.*/
+}

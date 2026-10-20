@@ -1,0 +1,120 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+header{
+    height: 100px;
+    background-color:turquoise;
+    color: rgb(29, 94, 135);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgb(0, 0, 1);
+    
+}
+.logo1{
+    top: 12px;
+    left: 22px;
+    position: absolute;
+    border-radius: 150px;
+    max-width: 60px;
+}
+
+.poema{
+    text-align:center;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+span{
+    color: rgb(225, 15, 15);
+}
+
+p{
+    margin-bottom: 20px;
+    list-style: 1.5;
+}
+
+main{
+    padding: 20px;
+    background-color: rgb(178, 232, 212);
+    min-height: calc(120vh - 200px);
+}
+
+main img{
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;  
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 10px rgb(0, 0, 1);     
+}  
+
+ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul li a{
+    color: rgb(30, 46, 130);
+    font-style: italic;
+}
+
+ul li a:hover{
+    background-color: rgb(156, 242, 228);
+    text-decoration: underline;
+}
+
+.botones{
+    text-align: center;
+    margin: 20px;
+}
+
+.botones button{
+    background-color: rgb(154, 233, 245);
+    color: rgb(48, 180, 136);
+    border: none;
+    padding: 10px 30px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform;
+}
+.botones button:hover{
+    background-color: rgb(90, 238, 238);
+    transform: scale(1.05);
+}
+.botones button:active{
+    transform: scale(2);
+    
+}
+
+footer p{
+    margin: 0;
+}
+
+footer{
+    background-color: rgb(94, 246, 195);
+    color: rgb(29, 94, 135);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgb(0, 0, 1);
+}
+
+
+
+
