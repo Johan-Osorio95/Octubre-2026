@@ -1,0 +1,108 @@
+
+.body {
+    margin: 0 auto;
+    background-color: rgb(102, 102, 105);
+}
+
+.header {
+    background-color: rgb(15, 15, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__h1 {
+    width: 40%;
+    padding-left: 5rem;
+    margin-block: initial;
+    color: aliceblue;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header__logo{
+    border-radius: 6rem;
+    height: 80px;
+    padding: 1rem;
+}
+
+.header__nav {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+    line-height: 2;
+}
+
+.header__a {
+    transition: color 0.3s ease;
+}
+
+.header__a:hover {
+    background-color: rgb(76, 76, 246);
+    text-decoration: underline;
+}
+
+.header__a:active {
+    text-decoration: red;
+}
+
+.header__a {
+    color: aliceblue;
+    font-size: large;
+    font-family: emoji;
+}
+
+.main {
+    min-height: calc(100vh - 180px);
+   
+}
+.main__h1{
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-block-end-style: dashed;
+    line-height: 2;
+    background-color: gray;
+    border-radius: 1rem;
+}
+.main__p {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+div h2 {
+    padding-left: 2rem;
+    background-color: gray;
+    border-radius: 1rem;
+}
+
+div h3{
+    padding-inline: 6rem;
+}
+
+div p{
+    padding-inline: 8rem;
+    font-size: 1.1em;
+}
+
+
+
+footer {
+    height: 80px;
+    background-color: rgb(15, 15, 55);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+}

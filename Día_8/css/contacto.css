@@ -1,0 +1,119 @@
+.body {
+    margin: 0;
+    font-family: emoji;
+    line-height: 1.8;
+    background-color: rgb(49, 49, 51);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgb(15, 15, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__titulo {
+    width: 30rem;
+    padding-left: 5rem;  
+}
+
+.header__logo {
+    border-radius: 5rem;
+    height: 80px;
+    padding: 0.60rem;
+}
+
+.header__nav {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+    line-height: 2;
+
+}
+
+.header__a {
+    transition: color 0.3s ease;
+}
+
+.header__a:hover {
+    background-color: rgb(76, 76, 246);
+    text-decoration-color: rgb(23, 4, 84);
+    border-radius: 5rem;
+}
+
+.header__a {
+    color: aliceblue;
+    font-size: large;
+    font-family: emoji;
+}
+
+.main {
+    font-size: 1.4em;
+    font-family: emoji;
+    min-height: calc(50vh);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 5rem;
+    margin: 0;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 27%;
+}
+
+.div{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction:column-reverse;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+.div__boton{
+    margin: 1rem;
+    padding: 0.80rem;
+    width: 9%;
+    background-color: rgb(15, 15, 55);
+    color: azure;
+    border: none;
+    border-radius: 50%;
+    font-size: large;
+    font-family: emoji;
+    cursor: pointer; 
+}
+.div__boton:hover{
+    background-color: #0e0e41;
+    transform: scale(1);
+}
+.div__boton:active{
+    transform: scale(2);
+}
+
+footer {
+    font-size: 1.4em;
+    font-family: emoji;
+    background-color: rgb(15, 15, 55);
+    color: white;
+    line-height: 1.8;
+    text-align: center;
+    padding: 1rem;
+}

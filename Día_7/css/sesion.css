@@ -1,0 +1,125 @@
+
+.body {
+    margin: 0 auto;
+    background-color: rgb(102, 102, 105);
+
+}
+
+.header {
+    height: 100px;
+    background-color: rgb(15, 15, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estructuramos el título que esta dentro del encabezado*/
+.header__h1 {
+    width: 40%;
+    padding-left: 50px;
+    margin-block: initial;
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header__nav {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    border-radius: 60%;
+    height: 80px;
+    padding: 10px;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    line-height: 2;
+}
+.header__a{
+    color: aliceblue;
+    font-size: large;
+    font-family: emoji;
+    transition: color 0.3s ease;
+}
+.header__a:hover{
+    background-color: rgb(76, 76, 246);
+    text-decoration: underline;
+}
+
+.header__a:active{
+    text-decoration: red;
+}
+
+.main {
+    min-height: calc(95vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sesion { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 3rem;
+}
+
+.sesion__h1 {
+    padding-bottom: 5rem;
+    background-color: gray;
+    border-radius: 4em;
+    padding-inline: 15px;
+    box-shadow: 0px 2px 8px rgb(15, 15, 55);
+}
+
+label{
+    font-style: italic;
+    font-size: 22px;
+    padding-right: 7%;
+    display: flex;  
+    text-align: center;
+}
+
+input{
+    font-style: italic;
+    font-size: 22px;
+    border-radius: 1em;
+    box-shadow: 0px 2px 8px rgb(29, 29, 130);
+} 
+
+.main__boton{
+    background-color: rgb(15, 15, 55);
+    border-radius: 50px;
+    border: none;
+    color: aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    margin: 3px;
+   
+}
+.main__boton:hover {
+    background-color: rgb(15, 15, 55);
+    transform: scale(1);
+}
+.main__boton:active {
+    transform: scale(2);
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(15, 15, 55);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

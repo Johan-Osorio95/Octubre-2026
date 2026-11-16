@@ -1,0 +1,318 @@
+
+
+.contenedor{ /*Esta es la caja base*/
+/*FlexBox*/
+    background-color: rgb(160, 160, 160); /*Color de fondo*/
+    border: 1px solid black; /* Con "border" le agrego un borde a la caja*/
+
+    padding: 5px; /*Con "padding" alejo del borde a los elementos que hay dentro de la caja base*/
+
+    display: flex; /*Con "display: flex;" activo Flexbox - pone las cajas en fila por defecto*/ 
+
+    flex-direction: column; /*Esta línea pone las cajas en columna.*/
+    flex-direction: column-reverse; /*Esta línea mantiene la columna, pero invierte el orden de las cajas*/
+
+    flex-direction: row; /*Esta línea pone las cajas en fila*/
+    flex-direction: row-reverse; /*Esta línea mantiene las cajas en fila, pero invierte el orden de las cajas*/
+
+    flex-wrap: wrap; /*Esta línea hace que las cajas estén en fila, pero hace que se adapten al tamaño de la pantalla*/
+    flex-wrap: wrap-reverse; /*Invierte el orden de las cajas*/
+    flex-wrap: nowrap; /*Indica que las cajas van a respetar la fila, pero van a ocupar el espacio que puedan ocupar*/
+
+    justify-content: center; /*Con "justify-content" vamos a ubicar las cajas que hay dentro de la caja base, de modo horizontal*/
+    align-content: center; /*nos permite trabajar verticalmente con el espacio que hay entre los elementos que tenemos dentro de la caja base*/
+    align-items: center;  /*vamos a alínear verticalmente las cajas que tenemos dentro de la caja base*/
+} 
+
+.caja{ /*Esta es la caja que está dentro de la caja base*/
+
+    border: 3px solid black; /*Le agrego borde a las cajas */
+    font-size: 30px; /*Con esto le agrego el tamaño de la letra */
+    text-align: center; /*Con esto alíneo el texto*/
+    margin: 5px; /*Con "margin" incremento o disminullo el margen de la caja*/
+}
+    
+/*
+● em: Es la medida ideal para tipografías (font-size).
+● rem: Es la medida ideal para propiedades box-model (margin, padding, gap, border...).
+● %: Es la medida ideal para anchos (width) y alturas (height).
+● px: Es la medida ideal para valores muy pequeños como 1px, 2px.
+● fr: Es la ideal para configurar la propiedad grid-template-columns con display:grid.
+*/
+
+.caja {
+    /* ── CONTENIDO ── */
+
+    width: 90%;                  /* ancho del contenido: el 90% del contenedor padre (en vez de 500px) */
+    max-width: 800px;            /* límite: en pantallas grandes nunca pasa de 800px */
+    min-width: 280px;            /* límite inferior: nunca será más estrecha de 280px */
+    height: auto;                /* alto automático según el contenido (en vez de height: 300px) */
+    min-height: 10rem;           /* alto mínimo; si hay más contenido, crece sin romperse */
+
+    /* ── PADDING (espacio INTERIOR, entre el contenido y el borde) ── */
+
+    padding: 1.5rem;                /* mismo espacio en los 4 lados (en vez de 24px) */
+    padding: 1rem 2rem;             /*arriba/abajo = 1rem, izquierda/derecha = 2rem */
+    padding: 1rem 2rem 1rem 0.5rem; /* arriba, derecha, abajo, izquierda (sentido del reloj) */
+
+    /* ── BORDER (el borde que rodea el padding) ── */
+
+    border: 2px solid #333;      /* grosor + estilo + color; aquí sí tiene sentido px: línea fina */
+    border-radius: 0.5rem;         /* esquinas redondeadas */
+
+    /* ── MARGIN (espacio EXTERIOR, separa la caja de las demás) ── */
+
+    margin: 0 auto;              /* 0 arriba/abajo; "auto" a izquierda/derecha = centrada */
+    margin-bottom: 2rem;         /* separación solo por abajo (sobrescribe el margin de abajo) */
+
+    /* ── CÓMO SE CALCULA EL TAMAÑO ── */
+
+    box-sizing: border-box;      /* el width INCLUYE padding y border (lo más práctico) */
+
+    /* ── TEXTO DENTRO DE LA CAJA ── */
+    font-size: 1rem;             /* 1rem = tamaño base del navegador (normalmente 16px) */
+}
+
+/* ========== RESET ========== */
+* {
+    margin: 0;              /* quita el margen por defecto de todos los elementos */
+    padding: 0;             /* quita el relleno interno por defecto */
+    border: 0;              /* quita bordes por defecto (botones, inputs...) */
+    outline: 0;             /* quita el contorno al enfocar (ojo: afecta la accesibilidad con teclado) */
+    box-sizing: border-box; /* el width/height incluye padding y borde, así los tamaños no se "inflan" */
+}
+
+/* ========== CUERPO ========== */
+body {
+    width: 100%;                /* ocupa todo el ancho disponible */
+    min-height: 100vh;          /* altura MÍNIMA = 100% de la pantalla; crece si hay más contenido */
+    background-color: #CAD5E2;  /* color de fondo azul grisáceo */
+}
+
+/* ========== HERO (imagen de portada) ========== */
+.section__hero {
+    width: 100%;        /* la imagen ocupa todo el ancho */
+    height: auto;       /* la altura se calcula sola para no deformar la imagen */
+    position: absolute; /* se saca del flujo normal y se coloca con top/left */
+    top: 0;             /* pegada arriba */
+    left: 0;            /* pegada a la izquierda */
+    z-index: -1;        /* se dibuja DETRÁS del resto de elementos */
+}
+
+/* ========== BARRA SUPERIOR (título y botones) ========== */
+.section {
+    font-family: 'Quantico', sans-serif;  /* fuente Quantico; si no carga, usa una sans-serif genérica */
+    font-size: clamp(1rem, 2.5vw, 1.3rem);/* tamaño de letra: mínimo 1rem, ideal 2.5% del ancho, máximo 1.3rem */
+    display: flex;                        /* activa Flexbox: los hijos se colocan en fila */
+    flex-direction: row;                  /* los hijos van en horizontal */
+    align-items: center;                  /* los centra verticalmente */
+    justify-content: space-between;       /* uno a cada extremo, con espacio en medio */
+    flex-wrap: wrap;                      /* si no caben, bajan a la siguiente línea (clave en móvil) */
+    gap: 1rem;                            /* separación entre los hijos */
+    padding-top: 2rem;                    /* espacio interno arriba */
+}
+
+.section__h1 {
+    padding-left: 2rem;   /* separa el título del borde izquierdo */
+}
+
+.section__div {
+    display: flex;                              /* los botones en fila */
+    flex-wrap: wrap;                            /* si no caben, bajan de línea */
+    gap: clamp(1rem, 3vw, 5rem);                /* separación entre botones: de 1rem a 5rem según la pantalla */
+    padding-right: clamp(1rem, 3vw, 5rem);      /* espacio a la derecha, también adaptable */
+}
+
+/* ========== LOGO CENTRAL ========== */
+.div__logo {
+    border-radius: 50%;                   /* lo hace un círculo perfecto */
+    width: clamp(4rem, 12vw, 7.5rem);     /* tamaño: mínimo 4rem, máximo 7.5rem, escala con la pantalla */
+    position: absolute;                   /* se posiciona libremente */
+    top: 50vh;                            /* a la mitad de la altura de la pantalla */
+    left: 50%;                            /* a la mitad del ancho */
+    transform: translate(-50%, -50%);     /* lo retrocede la mitad de su propio tamaño para centrarlo DE VERDAD */
+    z-index: 1;                           /* queda por encima del hero */
+}
+
+/* ========== BOTONES ========== */
+button {
+    padding: 0.50rem;                        /* espacio interno alrededor del texto */
+    border-radius: 1rem;                     /* esquinas redondeadas */
+    background-color: #8493A9;               /* color de fondo */
+    box-shadow: 0 .2125rem .525rem rgb(0, 0, 0); /* sombra: x=0, y=hacia abajo, desenfoque, color negro */
+    cursor: pointer;                         /* el cursor se vuelve una manito */
+    transition: transform 0.2s, background-color 0.2s; /* los cambios (hover/active) se animan suavemente */
+}
+
+button:hover {
+    background-color: #AB0A0A;  /* al pasar el mouse, cambia a rojo oscuro */
+    transform: scale(1.05);     /* crece un 5% (scale(1) no hacía nada, era el tamaño normal) */
+}
+
+button:active {
+    transform: scale(1.2);      /* al hacer clic, crece un 20% */
+}
+
+/* ========== HEADER / MENÚ ========== */
+header {
+    background-color: #8493A9;             /* color de fondo del menú */
+    box-shadow: 0 0 5rem 1.2rem black;     /* sombra grande: sin desplazamiento, 5rem de desenfoque, 1.2rem de expansión */
+    position: sticky;                      /* se mueve con el scroll hasta llegar a top: 0 y ahí se queda fijo */
+    top: 0;                                /* punto donde se "pega" al hacer scroll */
+    margin-top: 28vw;                      /* separación arriba; en vw escala con el ancho, igual que la imagen hero */
+}
+
+.header__ul {
+    display: flex;                                 /* los <li> en fila */
+    flex-wrap: wrap;                               /* si no caben, bajan de línea */
+    justify-content: space-around;                 /* reparte el espacio alrededor de cada elemento */
+    padding: clamp(1rem, 3vw, 3rem);               /* relleno interno adaptable */
+    list-style: none;                              /* quita las viñetas de la lista */
+    gap: clamp(0.5rem, 2vw, 2rem);                 /* separación entre elementos del menú */
+}
+
+/* ========== ENLACES ========== */
+a {
+    color: black;                 /* color del texto */
+    font-size: 1.30rem;           /* tamaño de letra */
+    text-decoration: none;        /* quita el subrayado */
+    padding: 0.60rem;             /* espacio interno (hace el área de clic más grande) */
+    border-radius: 1rem;          /* esquinas redondeadas para el fondo al hacer hover */
+    transition: transform 0.2s, background-color 0.2s; /* animación suave */
+}
+
+a:hover {
+    background-color: #AB0A0A;    /* fondo rojo al pasar el mouse */
+    transform: scale(1.05);       /* crece un poco */
+}
+
+a:active {
+    transform: scale(1.2);        /* crece más al hacer clic */
+}
+
+/* ========== ENLACES ESPECÍFICOS DEL MENÚ ========== */
+.header__novedades {
+    margin-right: clamp(0rem, 10vw, 20rem);  /* empuja los demás enlaces; se reduce en pantallas pequeñas */
+}
+
+.header__favoritos { color: #F4EF61; }   /* texto amarillo */
+.header__buscar    { color: #1016C3; }   /* texto azul */
+.header__carrito   { color: #F90D0D; }   /* texto rojo */
+
+.header__carrito:hover {
+    background-color: #AB0A0A;  /* fondo rojo oscuro al hacer hover */
+    color: black;               /* el texto pasa a negro para que se lea sobre el fondo rojo */
+    transform: scale(1.05);     /* crece un poco */
+    border-radius: 1rem;        /* esquinas redondeadas */
+}
+
+.header__carrito:active {
+    transform: scale(1.2);      /* crece al hacer clic */
+}
+
+/* ========== CUERPO PRINCIPAL ========== */
+.main__cuerpo {
+    display: flex;                    /* aside y galería en fila */
+    align-items: center;              /* centrados verticalmente */
+    justify-content: space-between;   /* uno a cada lado */
+    margin-top: 5rem;                 /* separación con el header */
+    min-height: 60vh;                 /* altura mínima del 60% de la pantalla (antes height fijo, que cortaba el contenido) */
+}
+
+.main__aside {
+    display: flex;           /* flexbox para alinear su contenido */
+    align-items: center;     /* centra verticalmente */
+    padding-left: 2rem;      /* separación del borde izquierdo */
+}
+
+.main__h2 {
+    background-color: #8493A9;           /* fondo del título */
+    border-radius: 2rem 0 0 2rem;        /* redondea solo las esquinas izquierdas (sup-izq, sup-der, inf-der, inf-izq) */
+    padding: 1rem;                       /* espacio interno */
+    box-shadow: 0 5px 5px black;         /* sombra hacia abajo */
+}
+
+/* ========== GALERÍA ========== */
+.main__picture {
+    overflow-x: auto;                          /* aparece scroll horizontal si las imágenes no caben */
+    scroll-snap-type: x mandatory;             /* al hacer scroll, "imanta" cada imagen (necesita scroll-snap-align en los hijos) */
+    gap: 20px;                                 /* separación entre imágenes */
+    width: 80vw;                               /* ocupa el 80% del ancho de la pantalla */
+    min-height: 60vh;                          /* altura mínima del 60% de la pantalla */
+    display: flex;                             /* imágenes en fila */
+    align-items: center;                       /* centradas verticalmente */
+    border-radius: clamp(2rem, 5vw, 5rem);     /* esquinas redondeadas adaptables */
+    background-color: #8493A9;                 /* color de fondo */
+    margin-right: 1rem;                        /* separación del borde derecho */
+    box-shadow: 2px 3px 5px black;             /* sombra (x, y, desenfoque, color) */
+    padding: 1rem;                             /* espacio interno */
+}
+
+.picture__img {
+    flex-shrink: 0;                            /* evita que Flexbox aplaste las imágenes para que quepan */
+    scroll-snap-align: center;                 /* la imagen se centra al "imantarse" */
+    width: clamp(10rem, 40vw, 20rem);          /* ancho: mínimo 10rem, máximo 20rem, ideal 40% del ancho */
+    height: clamp(10rem, 40vw, 20rem);         /* mismo valor que el ancho para que siga siendo cuadrada/circular */
+    border-radius: 50%;                        /* círculo perfecto */
+    box-shadow: 2px 3px 10px black;            /* sombra */
+    cursor: pointer;                           /* manito al pasar el mouse */
+    transition: transform 0.2s;                /* animación suave del zoom */
+}
+
+.picture__img:hover {
+    transform: scale(1.05);   /* crece un 5% al pasar el mouse */
+}
+
+.picture__img:active {
+    transform: scale(1.1);    /* crece un 10% al hacer clic */
+}
+
+/* ========== MEDIA QUERIES (van AL FINAL del archivo) ========== */
+
+/* Tablet: se aplica cuando la pantalla mide 900px o MENOS */
+@media (max-width: 900px) {
+    .main__cuerpo {
+        flex-direction: column;   /* aside y galería pasan de fila a columna */
+        gap: 2rem;                /* separación entre ellos */
+    }
+
+    .main__aside {
+        padding-left: 0;              /* quita el relleno lateral */
+        justify-content: center;      /* centra el título horizontalmente */
+    }
+
+    .main__h2 {
+        border-radius: 2rem;      /* ahora redondea las 4 esquinas, porque ya no está pegado a un lado */
+    }
+
+    .main__picture {
+        width: 90vw;          /* la galería ocupa casi todo el ancho */
+        margin-right: 0;      /* quita el margen derecho para que quede centrada */
+    }
+}
+
+/* Móvil: se aplica cuando la pantalla mide 600px o MENOS */
+@media (max-width: 600px) {
+    .section {
+        justify-content: center;  /* centra el contenido en vez de separarlo a los extremos */
+        text-align: center;       /* centra el texto */
+    }
+
+    .section__h1 {
+        padding-left: 0;          /* ya no hace falta separar del borde */
+    }
+
+    .section__div {
+        justify-content: center;  /* centra los botones */
+        padding-right: 0;         /* quita el relleno derecho */
+    }
+
+    .header__ul {
+        flex-direction: column;   /* el menú pasa a vertical */
+        align-items: center;      /* enlaces centrados */
+    }
+
+    .header__novedades {
+        margin-right: 0;          /* sin margen, para que no empuje nada fuera de la pantalla */
+    }
+}

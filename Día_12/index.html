@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>JohanWeb</title>
+    <link rel='stylesheet' href='css/main.css'>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Actividad 12</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a class="header__a" href="#padre1">Relative</a></li>
+                <li class="header__li"><a class="header__a" href="#padre2">Absolute</a></li>
+                <li class="header__li"><a class="header__a" href="#padre3">Fixed</a></li>
+                <li class="header__li"><a class="header__a" href="nivel3.html">Nivel 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="padre" id="padre1">
+        <h2>Posicionamiento "relative"</h2>
+        <p>Los demás 'div' respetan el espacio que deja el 'div' que movemos.</p>
+        <div class="hijo"></div>
+        <div class="hijo relative">relative</div>    
+        <div class="hijo"></div>
+    </div>
+
+    <div class="padre" id="padre2">
+        <h2>Posicionamiento "absolute"</h2>
+        <p>Los demás 'div' no respetan el espacio que deja el 'div' que movemos.</p>
+        <div class="hijo"></div>
+        <div class="hijo absolute">absolute</div>
+        <div class="hijo"></div>
+    </div>
+
+    <div class="padre" id="padre3">
+        <h2>Posicionamiento "fixed"</h2>
+        <p>Los demás 'div' no respetan el espacio que deja el 'div' que movemos.</p>
+        <div class="hijo"></div>
+        <div class="hijo fixed">fixed</div>
+        <div class="hijo"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+.body {
+    margin: 0 auto;
+    background-color: rgb(102, 102, 105);
+
+}
+
+.header {
+    background-color: rgb(15, 15, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__h1 {
+    width: 40%;
+    padding-left: 5rem;
+    margin-block: initial;
+    color: aliceblue;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header__logo {
+    border-radius: 5rem;
+    height: 80px;
+    padding: 1rem;
+}
+
+.header__nav {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+    line-height: 2;
+}
+
+.header__a{
+    color: aliceblue;
+    font-size: large;
+    font-family: emoji;
+}
+.header__a:hover{
+    background-color: rgb(76, 76, 246);
+    text-decoration: underline;
+    border-radius: 5rem;
+    transition: color 0.3s ease;
+}
+
+.header__a:active{
+    text-decoration: red;
+}
+
+
+.main {
+    min-height: calc(100vh - 180px);    
+}
+
+.main__div {
+    background-color: gray;
+    border-radius: 1em;
+    height: 20em;
+    width: 20%;
+    margin: 3rem;
+    padding: 1rem;
+    box-shadow: 0px 2px 8px blue;
+   
+}
+.main__h1{
+    width: 90%;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgb(15, 15, 55);
+    padding: 0.70rem;
+}
+.main__foto {
+    width: 80%;
+    padding-left: 1rem;
+}
+
+.main__h2{
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: gray;
+    margin-top: 1rem;
+    padding: 0.50rem;
+    box-shadow: 0px 2px 8px rgb(15, 15, 55);
+}
+
+.main__p {
+    background-color: gray;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 6px blue;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main__boton {
+    background-color: rgb(15, 15, 55);
+    color:azure;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.main__boton:hover {
+    background-color: rgb(15, 15, 55);
+    transform: scale(1);
+}
+.main__boton:active {
+    transform: scale(2);
+}
+.main__boton h3{
+    font-family: emoji;
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(15, 15, 55);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+}

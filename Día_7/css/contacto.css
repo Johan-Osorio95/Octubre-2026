@@ -1,0 +1,143 @@
+.body {
+    margin: 0;
+    font-family: emoji;
+    line-height: 1.8;
+    background-color: rgb(49, 49, 51);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 100px;
+    background-color: rgb(15, 15, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__titulo {
+    width: 40%;
+    padding-left: 50px;
+    margin-block: 3px;
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    background-color: #0e0e41;
+    border-radius: 5em;
+    box-shadow: 1px 2px 10px rgb(0, 0, 1);
+}
+
+.header__detalles {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 17em;
+    padding-top: 47px;
+    font-size: 16px;
+}
+
+.header__logo {
+    border-radius: 60%;
+    height: 80px;
+    padding: 10px;
+}
+
+.header__nav {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    line-height: 2;
+
+}
+
+.header__a {
+    transition: color 0.3s ease;
+}
+
+.header__a:hover {
+    background-color: rgb(76, 76, 246);
+    text-decoration-color: rgb(23, 4, 84);
+    border-radius: 10px;
+}
+
+.header__a {
+    color: aliceblue;
+    font-size: large;
+    font-family: emoji;
+}
+
+.main {
+    font-size: 20px;
+    font-family: emoji;
+    min-height: calc(65vh);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 5rem;
+    margin: 0;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 21rem;
+}
+
+.comentario {
+    width: 21rem;
+    height: 10rem;
+}
+
+.div{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction:column-reverse;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.div__boton{
+    margin: 7px;
+    width: 7rem;
+    height: 3rem;
+    background-color: rgb(15, 15, 55);
+    color: azure;
+    border: none;
+    border-radius: 50px;
+    font-size: large;
+    cursor: pointer; 
+}
+.div__boton:hover{
+    background-color: #0e0e41;
+    transform: scale(1);
+}
+.div__boton:active{
+    transform: scale(2);
+}
+
+footer {
+    font-size: 15px;
+    font-family: emoji;
+    background-color: rgb(15, 15, 55);
+    color: white;
+    line-height: 1.8;
+    text-align: center;
+    padding: 20px;
+}

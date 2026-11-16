@@ -1,0 +1,138 @@
+
+.body {
+    margin: 0;
+    font-family: emoji;
+    line-height: 1.8;
+    background-color: rgb(49, 49, 51);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(150vh - 260px);
+}
+
+.header {
+    height: 100px;
+    background-color: rgb(15, 15, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__titulo{
+    width: 40%;
+    padding-left: 50px;
+    margin-block: 3px;
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #0e0e41;
+    border-radius: 5em;
+    box-shadow: 1px 2px 10px rgb(0, 0, 1);
+}
+
+.header__detalles {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 17em;
+    padding-top: 47px;
+    font-size: 16px;
+}
+
+.header__logo {
+    border-radius: 60%;
+    height: 80px;
+    padding: 10px;
+}
+
+.header__nav {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    line-height: 2;
+
+}
+
+.header__a {
+    transition: color 1s ease;
+    color: aliceblue;
+    font-size: large;
+    font-family: emoji;
+}
+
+.header__a:hover {
+    background-color: rgb(76, 76, 246);
+    text-decoration-color: rgb(23, 4, 84);
+    border-radius: 10px;
+}
+
+.main {
+    text-align: center;
+    font-size: 20px;
+    font-family: emoji;
+}
+
+.main__h2 {
+    font-family: emoji;
+    text-align: center;
+}
+
+.main img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 10px rgb(0, 0, 1);
+    border-radius: 60px;
+    box-shadow: 1px 2px 5px yellowgreen;
+}
+
+.div__botones{
+    text-align: center;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 35%;
+}
+
+.div__botones button{
+    background-color: rgb(15, 15, 55);
+    color: azure;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: large;
+    cursor: pointer;
+    
+}
+
+.div__botones button:hover {
+    background-color: rgb(15, 15, 55);
+    transform: scale(1)
+}
+
+.div__botones button:active {
+    transform: scale(2);
+}
+
+
+footer {
+    font-size: 15px;
+    font-family: emoji;
+    background-color: rgb(15, 15, 55);
+    color: white;
+    line-height: 1.8;
+    text-align: center;
+    padding: 20px;
+}

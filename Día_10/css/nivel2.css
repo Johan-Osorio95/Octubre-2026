@@ -1,0 +1,42 @@
+.nivel_2-1{
+    width: 1300px;
+    height: 100px;
+    border: black solid;
+    background-color: blue;
+}
+
+@media(max-width: 1200px){
+    .nivel_2-1{
+        background-color: rgb(0, 255, 81);
+    }
+}
+@media(max-width: 780px){
+    .nivel_2-1{
+        background-color: yellow;
+    }
+}
+@media(max-width: 480px){
+    .nivel_2-1{
+        background-color: red;
+    }
+}
+
+.nivel_2-2{
+    width: 50vw;
+    height: 50vw;
+    background-color: red;
+}
+
+@media print {
+    .nivel_2-2{
+        background-color: green;
+    }
+}
+@media print{
+    .nivel_2-1{
+        background-color: black;
+        width: 50vw;
+        height: 50vw;
+        border: none;
+    }
+}

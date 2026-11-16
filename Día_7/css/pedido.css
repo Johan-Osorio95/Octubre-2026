@@ -1,0 +1,135 @@
+.body {
+    margin: 0 auto;
+    background-color: rgb(102, 102, 105);
+
+}
+
+.header {
+    height: 100px;
+    background-color: rgb(15, 15, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estructuramos el título que esta dentro del encabezado*/
+.header__h1 {
+    width: 40%;
+    padding-left: 50px;
+    margin-block: initial;
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header__logo {
+    border-radius: 60%;
+    height: 80px;
+    padding: 10px;
+}
+
+.header__nav {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    line-height: 2;
+}
+
+.header__a{
+    transition: color 0.3s ease;
+}
+.header__a:hover{
+    background-color: rgb(76, 76, 246);
+    text-decoration: underline;
+}
+
+.header__a:active{
+    text-decoration: red;
+}
+
+.header__a {
+    color: aliceblue;
+    font-size: large;
+    font-family: fantasy;
+}
+
+
+
+.main {
+    min-height: calc(100vh - 180px);    
+}
+
+.main__div {
+    background-color: gray;
+    border-radius: 1em;
+    height: 20em;
+    width: 15em;
+    margin: 3em;
+    padding: 8px;
+    box-shadow: 0px 2px 8px blue;
+   
+}
+.main__h1{
+    width: 7em;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgb(15, 15, 55);
+    padding: 5px;
+    margin-left: 3px;
+}
+.main__foto {
+    width: 13em;
+    padding-left: 1em;
+}
+
+.main__h2{
+    display: flex;
+    justify-content: center;
+    border-radius: 1em;
+    background-color: gray;
+    margin-top: 5px;
+    border-radius: 1em;
+    padding: 8px;
+    box-shadow: 0px 2px 8px rgb(15, 15, 55);
+}
+
+.main__p {
+    background-color: gray;
+    border-radius: 1em;
+    box-shadow: 0px 2px 6px blue;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__boton {
+    background-color: rgb(15, 15, 55);
+    color:azure;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.main__boton:hover {
+    background-color: rgb(15, 15, 55);
+    transform: scale(1);
+}
+.main__boton:active {
+    transform: scale(2);
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(15, 15, 55);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

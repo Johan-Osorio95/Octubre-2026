@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #CAD5E2;
+}
+
+/* __________________________________
+  |             HEADER               |
+  |----------------------------------|*/
+
+header {
+    background-color: #8493A9;
+    box-shadow: 0rem 0rem 5rem 1.2rem black;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+.header__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: clamp(1rem, 2vw, 3rem);
+    list-style: none;
+    gap: clamp(0.5rem, 1vw, 2rem);
+}
+
+.headernav {
+    color: black;
+    font-size: 1.30rem;
+    text-decoration: none;
+    padding: 0.60rem;
+    border-radius: 1rem;
+    border-bottom: 1px solid black;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.headernav:hover {
+    background-color: #AB0A0A;
+    transform: scale(1.05);
+}
+
+.headernav:active {
+    transform: scale(1.2);
+}
+
+.div__externo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 5rem 0 0 20rem;
+    padding: 3rem;
+    box-shadow: 15px 0px 20px gray;
+    background-color: #8493A9;
+}
+
+.div__div-interno {
+    box-shadow: 4px 0px 15px black;
+    background-color: #CAD5E2;
+}
+
+.div__p {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px black;
+}
+
+cite {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #4e1414;
+    text-shadow: none;
+}
+
+
+/* __________________________________
+  |              Footer              |
+  |----------------------------------|*/
+
+
+.footer {
+    padding: 2rem;
+    margin-top: 5rem;
+    box-shadow: 5px 0px 15px gray;
+    display: flex;
+    justify-content: center;
+    background-color: #8493A9;
+}

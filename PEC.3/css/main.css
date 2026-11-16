@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Quantico';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('fonts/quantico-v19-latin-regular.woff2') format('woff2');
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #CAD5E2;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+}
+
+/* ____________________________________
+  |               BANNER               |
+  |------------------------------------|*/
+
+.banner {
+    position: relative;
+}
+
+.banner__hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 18rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.banner__section {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: clamp(1rem, 3vw, 5rem);
+    padding: 2rem;
+    font-family: 'Quantico', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.banner__h1 {
+    font-weight: 400;
+    font-size: clamp(1.5rem 5vw, 2rem);
+    color: white;
+}
+
+
+.banner__logo {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    border-radius: 50%;
+    width: clamp(4rem, 12vw, 7.5rem);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    box-shadow: 0px 0px 40px black;
+}
+
+/* __________________________________
+  |      BOTONES DEL BANNER          |
+  |----------------------------------|*/
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #8493A9;
+    box-shadow: 0 0.2rem 0.5rem black;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.banner__botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+button:hover {
+    background-color: #AB0A0A;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1.2);
+}
+
+/* __________________________________
+  |             HEADER               |
+  |----------------------------------|*/
+
+header {
+    background-color: #8493A9;
+    box-shadow: 0rem 0rem 5rem 1.2rem black;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.header__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: clamp(1rem, 2vw, 3rem);
+    list-style: none;
+    gap: clamp(0.5rem, 1vw, 2rem);
+}
+
+.headernav {
+    color: black;
+    font-size: 1.30rem;
+    text-decoration: none;
+    padding: 0.60rem;
+    border-radius: 1rem;
+    border-bottom: 1px solid black;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.headernav:hover {
+    background-color: #AB0A0A;
+    transform: scale(1.05);
+}
+
+.headernav:active {
+    transform: scale(1.2);
+}
+
+.headernav__novedades {
+    margin-right: clamp(0rem, 10vw, 20rem);
+}
+
+.favoritos {
+    color: #F4EF61;
+}
+
+.buscar {
+    color: #1016C3;
+}
+
+.carrito {
+    color: #F90D0D;
+}
+
+.carrito:hover,
+.favoritos:hover,
+.buscar:hover {
+    background-color: #AB0A0A;
+    color: black;
+    transform: scale(1.05);
+    border-radius: 1rem;
+}
+
+.carrito:active,
+.favoritos:hover,
+.buscar:hover {
+    transform: scale(1.2);
+}
+
+/* __________________________________
+  |      CUERPO CARRUSEL             |
+  |----------------------------------|*/
+
+.main__carrusel-juegos-populares {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    min-height: 60vh;
+    z-index: -1;
+}
+
+.main__juegos-populares {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    background-color: #8493A9;
+    border-radius: 2rem 0rem 0rem 2rem;
+    padding: 1rem;
+    box-shadow: 0px 5px 5px black
+}
+
+.main__carrusel-mas-vendidos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    min-height: 60vh;
+}
+
+.main__mas-vendidos {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    background-color: #8493A9;
+    border-radius: 2rem 0rem 0rem 2rem;
+    padding: 1rem;
+    box-shadow: 0px 5px 5px black
+}
+
+.main__picture {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    width: 65vw;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    border-radius: clamp(2rem, 5vw, 5rem);
+    background-color: #8493A9;
+    margin-right: 1rem;
+    box-shadow: 4px 0px 15px black;
+
+}
+
+.picture__img {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    width: clamp(10rem, 40vw, 20rem);
+    height: clamp(10rem, 40vw, 20rem);
+    border-radius: 50%;
+    box-shadow: 2px 3px 10px black;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.picture__img:hover {
+    transform: scale(1.05);
+}
+
+.picture__img:active {
+    transform: scale(1.1);
+}
+
+.div__remnant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.60rem;
+}
+
+.remnant__botones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  
+}
+.remnantboton{
+      background-color: #AB0A0A;
+      font-size: 1rem;
+}
+.remnant__h1 {
+    width: 10rem;
+    text-align: center;
+    background-color: #CAD5E2;
+    border-bottom: 1px solid black;
+
+}
+
+
+/* __________________________________
+  |              Footer              |
+  |----------------------------------|*/
+
+
+.footer {
+    margin-top: 5rem;
+    box-shadow: 5px 0px 15px gray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+    background-color: #8493A9;
+}
+
+.footer__div {
+    text-align: center;
+    align-items: center;
+    color: rgb(3, 3, 3);
+    padding: 20px;
+    font-size: 25px;
+}
+
+#footer__informativo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1rem;
+}
+
+.footer__titulo-informacion-legal {
+    font-size: 1.5rem;
+
+}
+
+#logotipo {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    box-shadow: 0px 0px 10px
+}
+
+.footer__titulologotipo {
+    font-size: 2.5rem;
+
+}
+.footer__logo{
+    border-radius: 50%;
+    width: clamp(4rem, 12vw, 7.5rem);
+    box-shadow: 0px 0px 40px black;
+}
+
+#derechosreservados {
+    grid-column: 1 / 5;
+    grid-row: 3 / 3;
+    font-size: 1.2rem;
+    padding-bottom: 4rem;
+}
+
+.footer__p {
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+#redsocial {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    padding: 48px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer__titulosiguenos {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+.picture__imgenlace {
+    width: 10%;
+    transition: transform 0.2s;
+    cursor: pointer;
+    box-shadow: 1px 3px 5px rgb(153, 4, 4)
+}
+
+.picture__imgenlace:hover {
+    transform: scale(1.05);
+}
+
+.picture__imgenlace:active {
+    transform: scale(1.1);
+}
+
+.footer__a {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+
+/* __________________________________
+  |         @MEDIA QUIERES           |
+  |----------------------------------|*/
+
+
+@media(max-width: 900px) {
+
+    .banner__botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner__h1 {
+        position: relative;
+        bottom: 52px;
+    }
+
+    .banner__logo {
+        position: relative;
+        top: 25px;
+        left: -1%;
+    }
+
+    .header__ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .main__cuerpo {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .main__aside {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__aside2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__h2 {
+        border-radius: 2rem;
+    }
+
+    .main__picture {
+        width: 90vw;
+        margin-right: 0;
+    }
+
+    .main__juegos-populares {
+        display: flex;
+        text-align: center;
+        width: 80%;
+        box-shadow: -5px 0px 15px 3px;
+
+    }
+
+    .main__mas-vendidos {
+        display: flex;
+        text-align: center;
+        width: 80%;
+        box-shadow: -5px 0px 15px 3px;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .section {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section__h1 {
+        padding-left: 0;
+    }
+
+    .section__div {
+        flex-direction: center;
+        padding-right: 0;
+    }
+
+    .header__ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .header__novedades {
+        margin-right: 0;
+    }
+
+    .banner__logo {
+        position: absolute;
+        top: 100%;
+        left: 15%;
+    }
+}
+
+@media(max-width: 400px) {
+    .banner__section {
+        display: flex;
+        gap: 1rem;
+        padding: 57px;
+        flex-direction: column-reverse;
+    }
+
+    .banner__h1 {
+        bottom: 0;
+    }
+
+    .banner__logo {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+
+}

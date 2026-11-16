@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>JohanWeb</title>
+    <link rel='stylesheet' href='css/main.css'>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header" id="miheader">
+        <h1 class="header__h1">Actividad 15 - Enlace con imágenes</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a class="header__a" href="index1.html">Reproductor de Audio</a></li>
+                <li class="header__li"><a class="header__a" href="index2.html">Reproductor de vídeo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <picture class="picture">
+
+        <source srcset="images.webp" type="images/webp">
+        <source srcset="images.png" type="images/png">
+        <a href="https://codepen.io/">
+            <img class="picture__img" src="images/codepen.png" alt="codepen" loading="lazy">
+        </a>
+        <source srcset="images.webp" type="images/webp">
+        <source srcset="images.png" type="images/png">
+        <a href="https://open.spotify.com/">
+            <img class="picture__img" src="images/spotify.png" alt="Spotify" loading="lazy">
+        </a>
+        <source srcset="images.webp" type="images/webp">
+        <source srcset="images.png" type="images/png">
+        <a href="https://www.thomann.es/">
+            <img class="picture__img" src="images/tomman.png" alt="Tomman" loading="lazy">
+        </a>
+        
+    </picture>
+
+    <footer>
+        <p>&copy; 2026 - Todos los derechos reservados - Esto solo se usa como un ejemplo de aprendizaje.</p>
+    </footer>
+   
+</body>
+
+</html>

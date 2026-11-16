@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #CAD5E2;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+}
+
+/* __________________________________
+  |             HEADER               |
+  |----------------------------------|*/
+
+header {
+    background-color: #8493A9;
+    box-shadow: 0rem 0rem 5rem 1.2rem black;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.header__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: clamp(1rem, 2vw, 3rem);
+    list-style: none;
+    gap: clamp(0.5rem, 1vw, 2rem);
+}
+
+.headernav {
+    color: black;
+    font-size: 1.30rem;
+    text-decoration: none;
+    padding: 0.60rem;
+    border-radius: 1rem;
+    border-bottom: 1px solid black;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.headernav:hover {
+    background-color: #AB0A0A;
+    transform: scale(1.05);
+}
+
+.headernav:active {
+    transform: scale(1.2);
+}
+
+.div__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin-top: 5rem;
+}
+
+.div1 {
+    width: 200px;
+    height: 100px;
+    margin: 2rem auto;
+    box-shadow: -8px 10px 20px black;
+    transform: rotateY(45deg) rotateX(25deg);
+    background: linear-gradient(70deg, #1d344e, #e71640);
+}
+.div2 {
+    width: 200px;
+    height: 100px;
+    margin: 2rem auto;
+    box-shadow: 10px -10px 20px black;
+    transform:  rotateX(45deg) rotateY(45deg); 
+    background: linear-gradient(70deg, #1d5234, #2016e7); 
+}
+
+.div3 {
+    width: 200px;
+    height: 100px   ;
+    background-color: #cc6821;
+    margin: 2rem auto;
+    box-shadow: -10px 15px 20px black;
+    transform: rotateY(45deg) rotateX(45deg);
+    background: linear-gradient(70deg, #cc6821, #57ec89);
+}
+
+/* __________________________________
+  |              Footer              |
+  |----------------------------------|*/
+
+
+.footer {
+    padding: 2rem;
+    margin-top: 5rem;
+    box-shadow: 5px 0px 15px gray;
+    display: flex;
+    justify-content: center;
+    background-color: #8493A9;
+}

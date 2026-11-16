@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #afcef2;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+}
+
+/* __________________________________
+  |             HEADER               |
+  |----------------------------------|*/
+
+header {
+    background-color: #191b1e;
+    box-shadow: 0rem 0rem 5rem 1.2rem rgb(5, 75, 3);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.header__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: clamp(1rem, 2vw, 3rem);
+    list-style: none;
+    gap: clamp(0.5rem, 1vw, 2rem);
+}
+
+.headernav {
+    color: rgb(247, 238, 238);
+    font-size: 1.30rem;
+    text-decoration: none;
+    padding: 0.60rem;
+    border-radius: 1rem;
+    border-bottom: 1px solid #00f289;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.headernav:hover {
+    background-color: #00f289;
+    transform: scale(1.05);
+}
+
+.headernav:active {
+    transform: scale(1.2);
+}
+
+h1 {
+    color: #00f289;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    min-height: 60vh;
+
+}
+
+/* |________________________________________________
+   | Animación: más ancho y más estrecho, en bucle  |
+   |------------------------------------------------|*/
+.main__div1 {
+    animation-name: creciente;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    padding: 2rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 0px 15px black;
+    background-color: yellow;
+}
+
+@keyframes creciente {
+    from {
+        width: 100px;
+        height: 100px;
+    }
+
+    to {
+        width: 200px;
+        height: 10px;
+    }
+}
+
+/* |________________________________________________
+   |  Animación: rotación sobre su eje, en bucle    |
+   |------------------------------------------------|*/
+.main__div2 {
+    animation-name: girar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    padding: 2rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 0px 15px black;
+    background-color: blue;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* |__________________________________________
+   |  Animación: cambio de color, en bucle    |
+   |------------------------------------------|*/
+.main__div3 {
+    animation-name: color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    padding: 2rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 0px 15px black;
+}
+
+@keyframes color {
+    0% {
+        background-color: rgb(255, 247, 0);
+    }
+
+    50% {
+        background-color: rgb(0, 72, 255);
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+/* |__________________________________________
+   |  Animación: parpadeo de texto, en bucle  |
+   |------------------------------------------|*/
+.main__div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation-name: parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    box-shadow: 4px 0px 15px black;
+    background-color: rgb(244, 18, 18);
+}
+
+@keyframes parpadear {
+    0% {
+        color: rgb(255, 1, 1);
+    }
+
+    50% {
+        color: rgb(0, 0, 0);
+    }
+
+    100% {
+        color: rgb(255, 1, 1);
+    }
+}
+
+p {
+    font: emoji bold 15px;
+    text-align: center;
+}
+
+/* |________________________________________________________
+   |  Animación: traslado de izquierda a derecha, en bucle  |
+   |--------------------------------------------------------|*/
+.main__div5 {
+    animation: move 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards infinite alternate;
+    padding: 2rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 0px 15px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes move {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(-200px);
+    }
+}
+
+/* |________________________________
+   |  Animación: Usando de Scroll      |
+   |--------------------------------|*/
+
+
+@scroll-timeline slide-in-timeline {
+    source: auto;
+    orientation: block;
+}
+
+.main__div6 {
+    animation: slide-in-linear;
+    animation-timeline: slide-in-timeline;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(209, 25, 169);
+    box-shadow: 4px 0px 15px rgb(0, 0, 0);
+}
+
+
+@keyframes scroll-in {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+/* __________________________________
+  |              Footer              |
+  |----------------------------------|*/
+
+.footer {
+    padding: 2rem;
+    margin-top: 5rem;
+    background-color: #191b1e;
+    color: #00f289;
+    box-shadow: 0rem 0rem 5rem 1.2rem rgb(5, 75, 3);
+    display: flex;
+    justify-content: center;
+}

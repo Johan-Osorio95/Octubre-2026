@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #CAD5E2;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+}
+
+/* __________________________________
+  |             HEADER               |
+  |----------------------------------|*/
+
+header {
+    background-color: #8493A9;
+    box-shadow: 0rem 0rem 5rem 1.2rem black;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.header__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: clamp(1rem, 2vw, 3rem);
+    list-style: none;
+    gap: clamp(0.5rem, 1vw, 2rem);
+}
+
+.headernav {
+    color: black;
+    font-size: 1.30rem;
+    text-decoration: none;
+    padding: 0.60rem;
+    border-radius: 1rem;
+    border-bottom: 1px solid black;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.headernav:hover {
+    background-color: #AB0A0A;
+    transform: scale(1.05);
+}
+
+.headernav:active {
+    transform: scale(1.2);
+}
+
+.main__imagenes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    min-height: 60vh;
+
+}
+
+.main__picture {
+    padding: 2rem;
+    gap: 20px;
+    width: 65vw;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 0px 15px black;
+
+}
+
+.picture__img {
+
+    width: clamp(10rem, 40vw, 20rem);
+    height: clamp(10rem, 40vw, 20rem);
+    border-radius: 30%;
+    box-shadow: 2px 3px 10px black;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.picture__img:hover {
+    transform: scale(1.05);
+}
+
+
+.picture__img:active {
+    transform: scale(1.1);
+}
+
+/* Imagenes con filtros y efectos*/
+
+#assassin {
+    filter: blur(5px);
+}
+
+#biomutant {
+    filter: brightness(0.4);
+}
+
+#bloodborne {
+    filter: contrast(200%);
+}
+
+#cod {
+    filter: drop-shadow(16px 16px 20px black);
+}
+
+#cod2 {
+    filter: grayscale(50%);
+}
+
+#codww {
+    filter: hue-rotate(90deg);
+}
+
+#cuphead {
+    filter: invert(75%);
+}
+
+#deathstranding {
+    filter: opacity(25%);
+}
+
+#darksiders {
+    filter: saturate(30%);
+}
+
+#alonedark {
+    filter: sepia(60%);
+}
+
+#logo {
+    filter: invert(75%)
+}
+
+.div__sombra {
+    width: 50%;
+    margin-top: 5rem;
+    padding: 3rem;
+    box-shadow: 15px 0px 20px gray;
+    background-color: #8493A9;
+}
+
+.div__p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px black;
+}
+
+cite {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #4e1414;
+    text-shadow: none;
+}
+
+
+/* __________________________________
+  |              Footer              |
+  |----------------------------------|*/
+
+
+.footer {
+    padding: 2rem;
+    margin-top: 5rem;
+    box-shadow: 5px 0px 15px gray;
+    display: flex;
+    justify-content: center;
+    background-color: #8493A9;
+}

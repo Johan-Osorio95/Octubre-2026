@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #afcef2;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+}
+
+/* __________________________________
+  |             HEADER               |
+  |----------------------------------|*/
+
+header {
+    background-color: #191b1e;
+    box-shadow: 0rem 0rem 5rem 1.2rem rgb(5, 75, 3);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.header__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: clamp(1rem, 2vw, 3rem);
+    list-style: none;
+    gap: clamp(0.5rem, 1vw, 2rem);
+}
+
+.headernav {
+    color: rgb(247, 238, 238);
+    font-size: 1.30rem;
+    text-decoration: none;
+    padding: 0.60rem;
+    border-radius: 1rem;
+    border-bottom: 1px solid #00f289;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.headernav:hover {
+    background-color: #00f289;
+    transform: scale(1.05);
+}
+
+.headernav:active {
+    transform: scale(1.2);
+}
+
+h1 {
+    color: #00f289;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    min-height: 60vh;
+}
+
+
+/* __________________________________________________________________________
+  | Transición: El contenedor se hace más ancho al pasar el mouse por encima |
+  |--------------------------------------------------------------------------|*/
+.main__div1 {
+    padding: 2rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 0px 15px black;
+    background-color: yellow;
+    transition: width 0.5s;
+}
+
+.main__div1:hover {
+    width: 200px;
+}
+
+
+/* __________________________________________________________________________
+  | Transición: El contenedor se hace más alto al pasar el mouse por encima  |
+  |--------------------------------------------------------------------------|*/
+.main__div2 {
+    padding: 2rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 0px 15px black;
+    background-color: blue;
+    transition: height 1s;
+}
+
+.main__div2:hover {
+    height: 200px;
+}
+
+/* _____________________________________________________________________________________________
+  | Transición: El contenedor se hace, a la vez, más ancho y alto al pasar el mouse por encima  |
+  |---------------------------------------------------------------------------------------------|*/
+.main__div3 {
+    padding: 2rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 0px 15px black;
+    background-color: red;
+    transition: width 1s, height 1s;
+}
+
+.main__div3:hover {
+    width: 200px;
+    height: 200px;
+}
+
+/* __________________________________________________________________
+  | Transición: El contenedor se hace, a la vez, más ancho, más alto |   
+  |      y de diferente color al pasar el mouse por encima           |
+  |------------------------------------------------------------------|*/
+
+.main__div4 {
+    padding: 2rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 0px 15px black;
+    background-color: green;
+    transition: width 1s, height 2s, background-color 2.5s;
+}
+
+.main__div4:hover {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(95, 5, 5);
+}
+
+
+/*  ____________________________________________________________________________________
+   | Transición: El contenedor se hace, a la vez, más ancho, más alto, cambia de color, |
+   |            aparece texto y rota al pasar el mouse por encima                       |
+   |------------------------------------------------------------------------------------|*/
+
+.main__div5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 0px 15px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    transition: transform 2s, font 2s, color 2s, width 2s, height 2s;
+}
+
+.main__div5:hover {
+    width: 200px;
+    height: 200px;
+    font: emoji bold 15px;
+    color: rgb(255, 0, 0);
+    transform: rotate(360deg);
+}
+
+p {
+    text-align: center;
+}
+
+
+/* __________________________________
+  |              Footer              |
+  |----------------------------------|*/
+
+.footer {
+    padding: 2rem;
+    margin-top: 5rem;
+    background-color: #191b1e;
+    color: #00f289;
+    box-shadow: 0rem 0rem 5rem 1.2rem rgb(5, 75, 3);
+    display: flex;
+    justify-content: center;
+}

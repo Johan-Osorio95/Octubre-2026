@@ -1,7 +1,149 @@
-* {
+/*Esto modifica el logo base.*/
+.logo1 {
+    max-width: 80px;
+    border-radius: 150px; 
+    display: flex; 
+    
+}
 
-    margin: 0;
+/*Aquí damos estilo al encabezado*/
+header {
+    background-color: rgb(15, 15, 55);
+    color: white;
+    line-height: 1.8;
+    padding: 20px;
+}
+/*Aquí le damos estilo al título*/
+header h1{
+    font-size: 35px;
+}
+/*Le damos estructura a los datos de navegación*/
+ul{
+    list-style: none;
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    gap: 20px;    
+    justify-content: center;
+}
+/*Le implementamos un estilo a los datos de navegación del encabezado*/
+ul a{
+    font-size: 15px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: color 0.3s ease;
+}
 
+ul a:hover{
+    background-color: rgb(76, 76, 246);
+    text-decoration: underline;
+}
+
+ul a:active{
+    text-decoration: red;
+}
+/*Le implementamos dimensiones y colores al cuerpo de html*/
+body {
+    font-family: monospace;
+    line-height: 1.8;
+    background-color: rgb(49, 49, 51);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(150vh - 260px);
+}
+/*Le damos estilo al subtítulo*/
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+/*Le implementamos estilo y dimensiones al main*/
+main{
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+}
+/*Le implementamos dimensiones y ubicaciones a las imágenes*/
+.foto1{
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;  
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 10px rgb(0, 0, 1); 
+}
+
+.foto2{
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;  
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 10px rgb(0, 0, 1); 
+}
+
+.foto3{
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;  
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 10px rgb(0, 0, 1); 
+}
+
+.foto4{
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;  
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 10px rgb(0, 0, 1);
+}
+
+.foto5{
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;  
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 10px rgb(0, 0, 1);
+}
+/*Le damos estilo, efectos y dimensiones a los botones*/
+.botones{
+    text-align: center;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 35%;
+}
+
+.botones button{
+    background-color: rgb(132, 124, 124);
+    color: azure;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 0.5 ease, transform;
+}
+
+.botones button:hover{
+    background-color: rgb(15, 15, 55);
+    transform:scale(1)
+}
+.botones button:active{
+    transform:scale(2);
+}
+/*Le implementamos estilo y dimensiones al footer*/
+footer {
+    font-size: 15px;
+    font-family:monospace;
+    background-color: rgb(15, 15, 55);
+    color: white;
+    line-height: 1.8;
+    text-align: center;
+    padding: 20px;
 }

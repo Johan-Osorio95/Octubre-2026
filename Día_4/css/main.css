@@ -1,24 +1,23 @@
 * {
-
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
     box-sizing: border-box;
-
 }
 
 
-
+/*Este es el encabezado*/
 header{
     height: 100px;
-    background-color:turquoise;
-    color: rgb(29, 94, 135);
+    background-color:rgb(33, 32, 32);
+    color: rgb(218, 222, 225);
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 15px rgb(0, 0, 1);
     
 }
+/*Este es el logo de la esquina superior izquierda*/
 .logo1{
     top: 12px;
     left: 22px;
@@ -27,24 +26,19 @@ header{
     max-width: 60px;
 }
 
-.poema{
-    text-align:center;
-    padding: 15px;
-    margin-bottom: 10px;
-}
 
 span{
-    color: rgb(225, 15, 15);
+    color: rgb(186, 26, 26);
 }
 
 p{
     margin-bottom: 20px;
-    list-style: 1.5;
+    list-style: 2;
 }
 
 main{
     padding: 20px;
-    background-color: rgb(178, 232, 212);
+    background-color: rgb(219, 224, 222);
     min-height: calc(120vh - 200px);
 }
 
@@ -57,35 +51,36 @@ main img{
     margin-top: 20px;
     box-shadow: 1px 2px 10px rgb(0, 0, 1);     
 }  
-
+/*Esto establece las dimenciones de ul*/
 ul{
     list-style: none;
     margin-top: 10px;
 }
-
+/*Esto pone al <nav>(inicio,noticias,galeria,contacto) en fila*/
 ul li{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
 }
-
+/*Esto le da estilo le da estilo al <nav>*/
 ul li a{
-    color: rgb(30, 46, 130);
-    font-style: italic;
+    color: rgb(221, 224, 239);
+    font-style:italic;
+    font-size: large;
 }
-
+/*Esto agrega una decoración a las opciones de <nav>*/
 ul li a:hover{
-    background-color: rgb(156, 242, 228);
+    background-color: rgb(176, 43, 14);/*Agregamos color*/
     text-decoration: underline;
 }
-
+/*Esto alínea */
 .botones{
     text-align: center;
     margin: 20px;
 }
 
 .botones button{
-    background-color: rgb(154, 233, 245);
-    color: rgb(48, 180, 136);
+    background-color: rgb(145, 43, 20);
+    color: rgb(225, 237, 233);
     border: none;
     padding: 10px 30px;
     margin: 5px;
@@ -95,7 +90,7 @@ ul li a:hover{
     transition: background-color 0.3s ease, transform;
 }
 .botones button:hover{
-    background-color: rgb(90, 238, 238);
+    background-color: rgb(242, 94, 53);
     transform: scale(1.05);
 }
 .botones button:active{
@@ -108,8 +103,8 @@ footer p{
 }
 
 footer{
-    background-color: rgb(94, 246, 195);
-    color: rgb(29, 94, 135);
+    background-color: rgb(10, 10, 10);
+    color: rgb(241, 245, 247);
     text-align: center;
     padding: 20px;
     box-shadow: 0 2px 10px rgb(0, 0, 1);

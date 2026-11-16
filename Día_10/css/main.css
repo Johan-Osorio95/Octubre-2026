@@ -1,0 +1,80 @@
+/*.div1__h1{
+    font-size: 10vw;
+    font-style: italic;
+    color: black;
+}
+
+.div1__h2{
+    font-size: 10vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}
+
+.div1__p{
+    font-size:10vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+
+button{
+    font-size: 10vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: chartreuse;
+}
+.div2{
+    background-color: aquamarine;
+    width: 20px;
+    font-size: 20px;
+}
+.div2__p{
+    font-size: 1em;
+}
+
+.div3 {
+    background-color: rgb(236, 76, 7);
+    width: 25vw;
+    padding: calc(10rem + 15px);
+}
+.div4__h1{
+    font-size: calc(2vw + 10px);
+}
+
+.div5__p{
+    max-width: 150vh;
+    line-height: 2em;
+}
+
+
+.div6__h1{
+    font-size: 10vw;
+}
+.div6__p{
+    font-size: 2vh;
+}
+
+@font-face{
+    font-family: 'FuenteNueva';
+    src: url('FuenteNueva.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.div7{
+    font-family: 'FuenteNueva', sans-serif;
+}
+*/
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+.div8__h1{
+    font-family: 'Inter', sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+@media (max-width: 600px){
+    .div8__h1{
+        font-variation-settings: 'wght' 300;
+    }
+}

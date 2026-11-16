@@ -1,0 +1,21 @@
+
+.nivel_1-1{
+    width: 50vw;
+    height: 50vh;
+    background-color:rgb(70, 28, 28);
+    border: black solid;
+}
+
+.nivel_1-2{
+    width: 50vh;
+    height: 50vw;
+    background-color: rgb(227, 9, 9);
+    border: gray solid;
+}
+
+.nivel_1-3{
+    width: 20em;
+    height: 20em;
+    background-color: blue;
+    border: rgb(6, 4, 4) solid;
+}
