@@ -19,6 +19,14 @@ body {
   |             HEADER               |
   |----------------------------------|*/
 
+.headernav[aria-current="page"] {
+    color: #00f58c;
+    font-weight: bold;
+    border-bottom: 2px solid #00f58c;
+    border-radius: 0 0 12px 12px;
+    background: rgba(0, 245, 140, 0.1);
+}
+
 header {
     background-color: #191b1e;
     box-shadow: 0rem 0rem 5rem 1.2rem rgb(5, 75, 3);
@@ -61,6 +69,17 @@ h1 {
 }
 
 .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    min-height: 60vh;
+
+}
+
+.main1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -215,34 +234,54 @@ p {
 }
 
 /* |________________________________
-   |  Animación: Usando de Scroll      |
+   |  Animación: Usando de Scroll   |
    |--------------------------------|*/
 
 
-@scroll-timeline slide-in-timeline {
-    source: auto;
-    orientation: block;
-}
-
 .main__div6 {
-    animation: slide-in-linear;
-    animation-timeline: slide-in-timeline;
+    animation: slide-in linear both;
+    animation-timeline: scroll();
     width: 100px;
     height: 100px;
     background-color: rgb(209, 25, 169);
     box-shadow: 4px 0px 15px rgb(0, 0, 0);
 }
 
-
-@keyframes scroll-in {
-    0% {
-        transform: translateY(0);
+@keyframes slide-in {
+    from {
+        transform: translateX(-500%);
     }
 
-    100% {
-        transform: translateY(-200px);
+    to {
+        transform: translateX(550%);
     }
 }
+
+/* |_____________________________________
+   |  Técnicas con animación-fill-mode   |
+   |-------------------------------------|*/
+.main__div7 {
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(237, 243, 76);
+    box-shadow: 4px 0px 15px rgb(0, 0, 0);
+}
+
+@keyframes mover {
+    from {
+        transform: translateX(-200%);
+    }
+
+    to {
+        transform: translateX(200px);
+    }
+}
+
 
 /* __________________________________
   |              Footer              |

@@ -1,0 +1,81 @@
+.body {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    height: 55%;
+}
+
+.main__h1 {
+    vertical-align: inherit;
+    padding: 0.4rem;
+    border: 1px solid;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+}
+
+.div__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 26px;
+    border-radius: 50%;
+}
+
+.formulario {
+    display: contents;
+}
+
+label {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+input {
+    box-shadow: 0 0 5px black;
+}
+
+#comentarios{
+    box-shadow: 0 0 5px black;
+    width: 92%;
+}
+.div__boton {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    width: 5.5rem;
+    background-color: rgb(157, 255, 193);
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 1px 5px 10px green;
+    padding: 0.4rem;
+    cursor: pointer;
+
+}
+
+.boton:hover {
+    background-color: #073c12;
+    color: white;
+    transform: scale(1.2);
+}
+
+.boton:active {
+    transform: scale(2);
+}

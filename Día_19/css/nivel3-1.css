@@ -6,10 +6,11 @@
     box-sizing: border-box;
 }
 
+
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: #CAD5E2;
+    background-color: #afcef2;
     font-family: 'Quantico', sans-serif;
     font-weight: 400;
 }
@@ -18,9 +19,17 @@ body {
   |             HEADER               |
   |----------------------------------|*/
 
+.headernav[aria-current="page"] {
+    color: #00f58c;
+    font-weight: bold;
+    border-bottom: 2px solid #00f58c;
+    border-radius: 0 0 12px 12px;
+    background: rgba(0, 245, 140, 0.1);
+}
+
 header {
-    background-color: #8493A9;
-    box-shadow: 0rem 0rem 5rem 1.2rem black;
+    background-color: #191b1e;
+    box-shadow: 0rem 0rem 5rem 1.2rem rgb(5, 75, 3);
     position: sticky;
     z-index: 100;
     top: 0;
@@ -36,17 +45,17 @@ header {
 }
 
 .headernav {
-    color: black;
+    color: rgb(247, 238, 238);
     font-size: 1.30rem;
     text-decoration: none;
     padding: 0.60rem;
     border-radius: 1rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #00f289;
     transition: transform 0.2s, background-color 0.2s;
 }
 
 .headernav:hover {
-    background-color: #AB0A0A;
+    background-color: #00f289;
     transform: scale(1.05);
 }
 
@@ -54,10 +63,15 @@ header {
     transform: scale(1.2);
 }
 
+h1 {
+    color: #00f289;
+    text-align: center;
+}
+
 .div__contenedor {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     margin-top: 5rem;
 }
 
@@ -69,18 +83,19 @@ header {
     box-shadow: -8px 10px 20px black;
     transform: rotateY(45deg) rotateX(25deg);
 }
+
 .div2 {
     width: 200px;
     height: 100px;
     background-color: #1d5234;
     margin: 2rem auto;
     box-shadow: 10px -10px 20px black;
-    transform:  rotateX(45deg) rotateY(45deg);  
+    transform: rotateX(45deg) rotateY(45deg);
 }
 
 .div3 {
     width: 200px;
-    height: 100px   ;
+    height: 100px;
     background-color: #cc6821;
     margin: 2rem auto;
     box-shadow: -10px 15px 20px black;

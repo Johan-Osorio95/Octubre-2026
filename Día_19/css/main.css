@@ -19,6 +19,14 @@ body {
   |             HEADER               |
   |----------------------------------|*/
 
+.headernav[aria-current="page"] {
+    color: #00f58c;
+    font-weight: bold;
+    border-bottom: 2px solid #00f58c;
+    border-radius: 0 0 12px 12px;
+    background: rgba(0, 245, 140, 0.1);
+}
+
 header {
     background-color: #191b1e;
     box-shadow: 0rem 0rem 5rem 1.2rem rgb(5, 75, 3);
@@ -60,6 +68,9 @@ h1 {
     text-align: center;
 }
 
+/* __________________________________________________________________________
+  | Transición: El contenedor se hace más ancho al pasar el mouse por encima |
+  |--------------------------------------------------------------------------|*/
 .main {
     display: flex;
     justify-content: center;
@@ -70,10 +81,6 @@ h1 {
     min-height: 60vh;
 }
 
-
-/* __________________________________________________________________________
-  | Transición: El contenedor se hace más ancho al pasar el mouse por encima |
-  |--------------------------------------------------------------------------|*/
 .main__div1 {
     padding: 2rem;
     width: 100px;

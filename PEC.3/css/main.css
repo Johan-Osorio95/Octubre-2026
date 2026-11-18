@@ -11,7 +11,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('fonts/quantico-v19-latin-regular.woff2') format('woff2');
+    src: url('..fonts/quantico-v19-latin-regular.woff2') format('woff2');
 }
 
 body {
@@ -180,6 +180,7 @@ header {
   |      CUERPO CARRUSEL             |
   |----------------------------------|*/
 
+
 .main__carrusel-juegos-populares {
     display: flex;
     align-items: center;
@@ -189,6 +190,25 @@ header {
     z-index: -1;
 }
 
+.main__carrusel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 65vw;
+    min-height: 60vh;
+    border-radius: clamp(2rem, 5vw, 5rem);
+    background-color: #8493A9;
+    margin-right: 1rem;
+    box-shadow: 4px 0px 15px black;
+
+}
+
+.div__remnant{
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
 .main__juegos-populares {
     display: flex;
     align-items: center;
@@ -198,7 +218,7 @@ header {
     padding: 1rem;
     box-shadow: 0px 5px 5px black
 }
-
+/*
 .main__carrusel-mas-vendidos {
     display: flex;
     align-items: center;
@@ -217,7 +237,7 @@ header {
     box-shadow: 0px 5px 5px black
 }
 
-.main__picture {
+.main__carrusel-juegos-populares {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
@@ -231,16 +251,14 @@ header {
     box-shadow: 4px 0px 15px black;
 
 }
-
+*/
 .picture__img {
-    flex-shrink: 0;
-    scroll-snap-align: center;
     width: clamp(10rem, 40vw, 20rem);
     height: clamp(10rem, 40vw, 20rem);
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: 2px 3px 10px black;
     cursor: pointer;
-    transition: transform 0.2s;
 }
 
 .picture__img:hover {
@@ -262,12 +280,14 @@ header {
     display: flex;
     align-items: center;
     gap: 1rem;
-  
+
 }
-.remnantboton{
-      background-color: #AB0A0A;
-      font-size: 1rem;
+
+.carruselboton {
+    background-color: #AB0A0A;
+    font-size: 1rem;
 }
+
 .remnant__h1 {
     width: 10rem;
     text-align: center;
@@ -314,6 +334,15 @@ header {
 
 }
 
+.footer__enlace {
+    text-decoration: none;
+    color: #1016C3;
+    font-size: 1.5em;
+    border-radius: 1rem;
+    background-color: #CAD5E2;
+    padding: 0.4rem;
+}
+
 #logotipo {
     grid-column: 2 / 4;
     grid-row: 1 / 3;
@@ -321,17 +350,19 @@ header {
     flex-direction: column;
     gap: 2rem;
     padding-top: 2rem;
-    box-shadow: 0px 0px 10px
+    box-shadow: 0px 0px 10px;
+    font-size: 2rem;
 }
 
-.footer__titulologotipo {
-    font-size: 2.5rem;
-
-}
-.footer__logo{
+.footer__logo {
     border-radius: 50%;
     width: clamp(4rem, 12vw, 7.5rem);
     box-shadow: 0px 0px 40px black;
+    transition: transform 2s, font 2s, color 2s, width 2s, height 2s;
+}
+
+.footer__logo:hover {
+    transform: rotate(360deg);
 }
 
 #derechosreservados {
@@ -375,7 +406,7 @@ header {
     transform: scale(1.1);
 }
 
-.footer__a {
+.footer__socialred {
     display: flex;
     gap: 1rem;
 }
@@ -482,7 +513,7 @@ header {
 
     .banner__logo {
         position: absolute;
-        top: 100%;
+        top: 85%;
         left: 15%;
     }
 }
