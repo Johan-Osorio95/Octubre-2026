@@ -1,0 +1,129 @@
+header {
+    height: 100px;
+    background-color: rgb(15, 15, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estructuramos el título que esta dentro del encabezado*/
+header h1 {
+    width: 40%;
+    padding-left: 50px;
+    margin-block: initial;
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header img {
+    border-radius: 60%;
+    height: 80px;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    line-height: 2;
+}
+ul a{
+    transition: color 0.3s ease;
+}
+ul a:hover{
+    background-color: rgb(76, 76, 246);
+    text-decoration: underline;
+}
+
+ul a:active{
+    text-decoration: red;
+}
+
+ul li a {
+    color: aliceblue;
+    font-size: large;
+    font-family: emoji;
+}
+
+nav {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    min-height: calc(100vh - 180px);    
+}
+
+.div1 {
+    background-color: gray;
+    border-radius: 1em;
+    height: 20em;
+    width: 15em;
+    margin: 3em;
+    padding: 8px;
+    box-shadow: 0px 2px 8px blue;
+   
+}
+.titulo{
+    width: 7em;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgb(15, 15, 55);
+    padding: 5px;
+    margin-left: 3px;
+}
+.guitar{
+    width: 13em;
+    padding-left: 1em;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    border-radius: 1em;
+    background-color: gray;
+    margin-top: 5px;
+    border-radius: 1em;
+    padding: 8px;
+    box-shadow: 0px 2px 8px rgb(15, 15, 55);;
+}
+h3{
+    background-color: rgb(15, 15, 55);
+    color: rgb(252, 250, 250);
+    border-radius: 1em;
+    padding: 6px;
+    text-align: right;
+    margin-left: 6em;
+    width: 6em;
+    box-shadow: 0px 2px 8px rgb(252, 0, 0);
+}
+
+.comentario{
+    background-color: gray;
+    border-radius: 1em;
+    box-shadow: 0px 2px 6px blue;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+body {
+    margin: 0 auto;
+    background-color: rgb(102, 102, 105);
+
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(15, 15, 55);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
