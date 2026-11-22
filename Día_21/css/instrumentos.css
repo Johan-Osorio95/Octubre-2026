@@ -1,0 +1,99 @@
+/*Estructura del encabezado*/
+header {
+    height: 100px;
+    background-color: rgb(15, 15, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estructura del título (del encabezado)*/
+header h1 {
+    width: 40%;
+    padding-left: 50px;
+    margin-block: initial;
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+/*Estructura del logo (Del encabezado)*/
+header img {
+    border-radius: 60%;
+    height: 80px;
+    padding: 10px;
+}
+/*Estructura del navegador (Del encabezado)*/
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    line-height: 2;
+}
+ul a{
+    transition: color 0.3s ease;
+}
+ul a:hover{
+    background-color: rgb(76, 76, 246);
+    text-decoration: underline;
+}
+
+ul a:active{
+    text-decoration: red;
+}
+/*Color y fuente del navegador(Del encabezado)*/
+ul li a {
+    color: aliceblue;
+    font-size: large;
+    font-family: emoji;
+}
+/*Estructura del navegador (Del encabezado)*/
+nav {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+main img {
+    border-radius: 60px;
+    box-shadow: 1px 2px 5px yellowgreen;
+}
+
+h2 {
+    color: aliceblue;
+    font-style: italic;
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+main {
+    min-height: calc(75vh - 175px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgb(102, 102, 105);
+
+}
+div{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(15, 15, 55);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,110 @@
+header {
+    height: 100px;
+    background-color: rgb(15, 15, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estructuramos el título que esta dentro del encabezado*/
+header h1 {
+    width: 40%;
+    padding-left: 50px;
+    margin-block: initial;
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header img {
+    border-radius: 60%;
+    height: 80px;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    line-height: 2;
+}
+
+ul a {
+    transition: color 0.3s ease;
+}
+
+ul a:hover {
+    background-color: rgb(76, 76, 246);
+    text-decoration: underline;
+}
+
+ul a:active {
+    text-decoration: red;
+}
+
+ul li a {
+    color: aliceblue;
+    font-size: large;
+    font-family: emoji;
+}
+
+nav {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    min-height: calc(100vh - 180px);
+   
+}
+
+.miweb1 {
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-block-end-style: dashed;
+    line-height: 2;
+    background-color: gray;
+    border-radius: 1em;
+}
+.miwebb{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+div h2{
+    padding-left: 2em;
+    background-color: gray;
+    border-radius: 1em;
+}
+
+div h3{
+    padding-inline: 6em;
+}
+
+div p{
+    padding-inline: 8em;
+    font-size: 18px;
+}
+
+
+body {
+    margin: 0 auto;
+    background-color: rgb(102, 102, 105);
+
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(15, 15, 55);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
