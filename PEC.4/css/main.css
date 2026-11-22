@@ -410,10 +410,12 @@ h3 {
     border-radius: 1rem;
     font-size: 1.2em;
 }
+
 .formulario__label-comentario {
     display: flex;
     margin-top: 1rem;
 }
+
 .comentarios {
     box-shadow: 0 0 5px var(--color-texto-negro);
     width: 100%;
@@ -495,11 +497,19 @@ h3 {
 /* dimensiones y estilos del Título: Juegos infantiles*/
 .main__h2-juegos-infantiles,
 .main__h2-juegos-accion,
-.main__h2-juegos-terror {
+.main__h2-juegos-terror,
+.main__h2-juegos-gratuitos {
     display: flex;
     align-items: center;
     padding: 1rem;
+    gap: 1rem;
     box-shadow: 0px 5px 5px var(--color-texto-negro)
+}
+
+.h2__gratuitos {
+    font-size: 0.6em;
+    font-style: italic;
+    color: var(--color-primario-accion);
 }
 
 /* Dimensiones y estilos de los Contenedores */
