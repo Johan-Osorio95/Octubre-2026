@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 .header {
-    background-color: black;
+    background-color: var(--color-texto-negro);
     color: rgb(178, 177, 177);
     text-align: center;
     display: flex;

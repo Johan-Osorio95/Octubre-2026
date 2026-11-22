@@ -41,5 +41,5 @@ p{
     bottom: 50px;
 }
 span{
-    background-color: antiquewhite;
+    background-color: antiquevar(--color-texto-blanco);
 }

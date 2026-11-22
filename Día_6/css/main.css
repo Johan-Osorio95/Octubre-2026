@@ -9,7 +9,7 @@
 /*Aquí damos estilo al encabezado*/
 header {
     background-color: rgb(15, 15, 55);
-    color: white;
+    color: var(--color-texto-blanco);
     line-height: 1.8;
     padding: 20px;
 }
@@ -46,7 +46,7 @@ body {
     font-family: monospace;
     line-height: 1.8;
     background-color: rgb(49, 49, 51);
-    color: white;
+    color: var(--color-texto-blanco);
     display: flex;
     flex-direction: column;
     min-height: calc(150vh - 260px);
@@ -142,7 +142,7 @@ footer {
     font-size: 15px;
     font-family:monospace;
     background-color: rgb(15, 15, 55);
-    color: white;
+    color: var(--color-texto-blanco);
     line-height: 1.8;
     text-align: center;
     padding: 20px;

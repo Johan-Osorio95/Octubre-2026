@@ -3,7 +3,7 @@
 .contenedor{ /*Esta es la caja base*/
 /*FlexBox*/
     background-color: rgb(160, 160, 160); /*Color de fondo*/
-    border: 1px solid black; /* Con "border" le agrego un borde a la caja*/
+    border: 1px solid var(--color-texto-negro); /* Con "border" le agrego un borde a la caja*/
 
     padding: 5px; /*Con "padding" alejo del borde a los elementos que hay dentro de la caja base*/
 
@@ -26,7 +26,7 @@
 
 .caja{ /*Esta es la caja que está dentro de la caja base*/
 
-    border: 3px solid black; /*Le agrego borde a las cajas */
+    border: 3px solid var(--color-texto-negro); /*Le agrego borde a las cajas */
     font-size: 30px; /*Con esto le agrego el tamaño de la letra */
     text-align: center; /*Con esto alíneo el texto*/
     margin: 5px; /*Con "margin" incremento o disminullo el margen de la caja*/
@@ -86,7 +86,7 @@
 body {
     width: 100%;                /* ocupa todo el ancho disponible */
     min-height: 100vh;          /* altura MÍNIMA = 100% de la pantalla; crece si hay más contenido */
-    background-color: #CAD5E2;  /* color de fondo azul grisáceo */
+    background-color: var(--color-fondo-principal);  /* color de fondo azul grisáceo */
 }
 
 /* ========== HERO (imagen de portada) ========== */
@@ -138,14 +138,14 @@ body {
 button {
     padding: 0.50rem;                        /* espacio interno alrededor del texto */
     border-radius: 1rem;                     /* esquinas redondeadas */
-    background-color: #8493A9;               /* color de fondo */
+    background-color: var(--color-fondo-secundario);               /* color de fondo */
     box-shadow: 0 .2125rem .525rem rgb(0, 0, 0); /* sombra: x=0, y=hacia abajo, desenfoque, color negro */
     cursor: pointer;                         /* el cursor se vuelve una manito */
     transition: transform 0.2s, background-color 0.2s; /* los cambios (hover/active) se animan suavemente */
 }
 
 button:hover {
-    background-color: #AB0A0A;  /* al pasar el mouse, cambia a rojo oscuro */
+    background-color: var(--color-primario-accion);  /* al pasar el mouse, cambia a rojo oscuro */
     transform: scale(1.05);     /* crece un 5% (scale(1) no hacía nada, era el tamaño normal) */
 }
 
@@ -155,8 +155,8 @@ button:active {
 
 /* ========== HEADER / MENÚ ========== */
 header {
-    background-color: #8493A9;             /* color de fondo del menú */
-    box-shadow: 0 0 5rem 1.2rem black;     /* sombra grande: sin desplazamiento, 5rem de desenfoque, 1.2rem de expansión */
+    background-color: var(--color-fondo-secundario);             /* color de fondo del menú */
+    box-shadow: 0 0 5rem 1.2rem var(--color-texto-negro);     /* sombra grande: sin desplazamiento, 5rem de desenfoque, 1.2rem de expansión */
     position: sticky;                      /* se mueve con el scroll hasta llegar a top: 0 y ahí se queda fijo */
     top: 0;                                /* punto donde se "pega" al hacer scroll */
     margin-top: 28vw;                      /* separación arriba; en vw escala con el ancho, igual que la imagen hero */
@@ -173,7 +173,7 @@ header {
 
 /* ========== ENLACES ========== */
 a {
-    color: black;                 /* color del texto */
+    color: var(--color-texto-negro);                 /* color del texto */
     font-size: 1.30rem;           /* tamaño de letra */
     text-decoration: none;        /* quita el subrayado */
     padding: 0.60rem;             /* espacio interno (hace el área de clic más grande) */
@@ -182,7 +182,7 @@ a {
 }
 
 a:hover {
-    background-color: #AB0A0A;    /* fondo rojo al pasar el mouse */
+    background-color: var(--color-primario-accion);    /* fondo rojo al pasar el mouse */
     transform: scale(1.05);       /* crece un poco */
 }
 
@@ -195,13 +195,13 @@ a:active {
     margin-right: clamp(0rem, 10vw, 20rem);  /* empuja los demás enlaces; se reduce en pantallas pequeñas */
 }
 
-.header__favoritos { color: #F4EF61; }   /* texto amarillo */
-.header__buscar    { color: #1016C3; }   /* texto azul */
+.header__favoritos { color: var(--color-amarillo); }   /* texto amarillo */
+.header__buscar    { color: var(--color-azul); }   /* texto azul */
 .header__carrito   { color: #F90D0D; }   /* texto rojo */
 
 .header__carrito:hover {
-    background-color: #AB0A0A;  /* fondo rojo oscuro al hacer hover */
-    color: black;               /* el texto pasa a negro para que se lea sobre el fondo rojo */
+    background-color: var(--color-primario-accion);  /* fondo rojo oscuro al hacer hover */
+    color: var(--color-texto-negro);               /* el texto pasa a negro para que se lea sobre el fondo rojo */
     transform: scale(1.05);     /* crece un poco */
     border-radius: 1rem;        /* esquinas redondeadas */
 }
@@ -226,10 +226,10 @@ a:active {
 }
 
 .main__h2 {
-    background-color: #8493A9;           /* fondo del título */
+    background-color: var(--color-fondo-secundario);           /* fondo del título */
     border-radius: 2rem 0 0 2rem;        /* redondea solo las esquinas izquierdas (sup-izq, sup-der, inf-der, inf-izq) */
     padding: 1rem;                       /* espacio interno */
-    box-shadow: 0 5px 5px black;         /* sombra hacia abajo */
+    box-shadow: 0 5px 5px var(--color-texto-negro);         /* sombra hacia abajo */
 }
 
 /* ========== GALERÍA ========== */
@@ -242,9 +242,9 @@ a:active {
     display: flex;                             /* imágenes en fila */
     align-items: center;                       /* centradas verticalmente */
     border-radius: clamp(2rem, 5vw, 5rem);     /* esquinas redondeadas adaptables */
-    background-color: #8493A9;                 /* color de fondo */
+    background-color: var(--color-fondo-secundario);                 /* color de fondo */
     margin-right: 1rem;                        /* separación del borde derecho */
-    box-shadow: 2px 3px 5px black;             /* sombra (x, y, desenfoque, color) */
+    box-shadow: 2px 3px 5px var(--color-texto-negro);             /* sombra (x, y, desenfoque, color) */
     padding: 1rem;                             /* espacio interno */
 }
 
@@ -254,7 +254,7 @@ a:active {
     width: clamp(10rem, 40vw, 20rem);          /* ancho: mínimo 10rem, máximo 20rem, ideal 40% del ancho */
     height: clamp(10rem, 40vw, 20rem);         /* mismo valor que el ancho para que siga siendo cuadrada/circular */
     border-radius: 50%;                        /* círculo perfecto */
-    box-shadow: 2px 3px 10px black;            /* sombra */
+    box-shadow: 2px 3px 10px var(--color-texto-negro);            /* sombra */
     cursor: pointer;                           /* manito al pasar el mouse */
     transition: transform 0.2s;                /* animación suave del zoom */
 }

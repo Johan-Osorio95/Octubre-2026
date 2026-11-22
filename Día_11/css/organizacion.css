@@ -1,5 +1,5 @@
 body{
-    border: 2px solid black;
+    border: 2px solid var(--color-texto-negro);
     margin: 1rem;
 }
 
@@ -70,7 +70,7 @@ body{
 .main__h1{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid var(--color-texto-negro);
     border-radius: 5rem;
     margin-inline: 30rem;
     padding: 0.50rem;
@@ -87,7 +87,7 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid var(--color-texto-negro);
     margin-inline: 25rem;
     padding: 0.50rem;
     gap: 3rem;
@@ -97,7 +97,7 @@ body{
 
 .main__cite{
     background-color: rgb(239, 117, 208);
-    border: 1px solid black;
+    border: 1px solid var(--color-texto-negro);
     padding: 0.10rem;
     display: flex;
     align-items: center;

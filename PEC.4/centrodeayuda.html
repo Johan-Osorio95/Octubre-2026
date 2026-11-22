@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Gameverse: tienda y biblioteca de videojuegos.">
+    <meta property="og:title" content="Gameverse">
+    <meta property="og:description" content="Tienda y biblioteca de videojuegos.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://johansor.com/images/logogameversecirculo.png">
+    <meta property="og:url" content="https://johansor.com/">
+    <link rel="icon" href="images/logogameversecirculo.png" type="image/png">
+    <title>Gameverse</title>
+    <link rel='stylesheet' href='css/main.css'>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- BANNER -->
+
+    <div class="banner">
+        <img class="banner__hero" src="images/bannermariobros.jpg" alt="GodOfWar">
+        <section class="banner__section">
+            <h1 class="banner__h1">Gameverse</h1>
+            <img class="banner__logo" src="images/logogameversecirculo.png" alt="logo">
+            <div class="banner__botones">
+                <a class="botonb" href="">Menú</a>
+                <a class="botonb" href="">Valoración</a>
+                <a class="botonb" href="centrodeayuda.html" aria-current="page">Ayuda</a>
+                <a class="botonb" href="iniciosesion.html">Ingresar</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- NAVEGADOR -->
+
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a class="headernav inicio" href="index.html">Inicio</a></li>
+                <li class="header__li"><a class="headernav genero" href="generos.html">Géneros</a></li>
+                <li class="header__li"><a class="headernav gratis" href="">Gratis</a></li>
+                <li class="header__li"><a class="headernav cinegame" href="">CineGame</a></li>
+                <li class="header__li"><a class="headernav novedades" href="">Novedades</a></li>
+                <li class="header__li"><a class="headernav bibioteca" href="biblioteca.html">Biblioteca</a></li>
+                <li class="header__li"><a class="headernav favoritos" href="">Favoritos</a></li>
+                <li class="header__li"><a class="headernav buscar" href="">Buscar</a></li>
+                <li class="header__li"><a class="headernav carrito" href="">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main__centro-de-ayuda">
+        <div class="div__formulario">
+            <div class="div__cuerpo-formulario">
+                <h2 class="main__h1-centro-de-ayuda">Centro de ayuda</h2>
+                <form class="formulario" method="POST" action="/PEC.4/images/kratos.png">
+
+                    <label for="nombre">Nombre:</label>
+                    <input class="formulario__campo-de-texto" type="text" id="nombre" name="nombre" required>
+
+                    <label for="apellido">Apellido:</label>
+                    <input class="formulario__campo-de-texto" type="text" id="apellido" name="apellido" required>
+
+                    <label for="email">Email:</label>
+                    <input class="formulario__campo-de-texto" type="email" id="email" name="email" required>
+
+                    <fieldset class="div__opciones">
+                        <legend>Tipo de incidencia:</legend>
+
+                        <input type="radio" id="pcuenta" name="tipo_incidencia" value="problemasdecuenta" required>
+                        <label for="pcuenta">Problema con la cuenta.</label><br>
+
+                        <input type="radio" id="ppago" name="tipo_incidencia" value="problemasdepago">
+                        <label for="ppago">Problema con el pago.</label><br>
+
+                        <input type="radio" id="otro" name="tipo_incidencia" value="otro">
+                        <label for="otro">Otro</label>
+
+                    </fieldset>
+
+                    <label class="formulario__label-comentario" for="comentarios">Detalla tu incidencia:</label>
+                    <textarea id="comentarios" class="comentarios" name="comentario"></textarea>
+
+                    <input class="boton" type="submit" value="Enviar">
+
+                    <img class="kratos" src="images/kratos.png" alt="kratos">
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <!-- FOOTER INFORMATIVO -->
+
+        <div class="footer__div footer__informativo">
+            <h2 class="footer__titulo-informacion-legal">INFORMACIÓN.</h2>
+            <a class="footer__enlace" href="" title="Terminos y condiciones">T & C</a>
+            <a class="footer__enlace" href="" title="Información legal">Info-Legal</a>
+            <a class="footer__enlace" href="" title="Información sobre nosotros">Info-GameVerse</a>
+            <a class="footer__enlace" href="" title="Tienda">Tienda</a>
+        </div>
+
+        <!-- FOOTER DERECHOS RESERVADOS -->
+
+        <div class="footer__div derechosreservados">
+            <p class="footer__p">&copy; 2026 - Todos los derechos reservados, las caratulas son usadas tan solo como
+                ejemplo en un proceso de práctica.</p>
+        </div>
+        <!-- FOOTER LOGO Y NOMBRE DE LA PÁGINA -->
+
+        <div class="footer__div logotipo">
+            <h2 class="footer__titulologotipo">GAMEVERSE</h2>
+            <picture>
+                <source srcset="images/logogameversecirculo.webp" type="image/webp">
+                <img class="footer__logo" src="images/logogameversecirculo.png" alt="Logo-Gameverse_footer"
+                    loading="lazy">
+            </picture>
+        </div>
+
+        <!-- FOOTER REDES SOCIALES -->
+
+        <div class="footer__div redsocial">
+
+            <h2 class="footer__titulosiguenos">SÍGUENOS</h2>
+
+            <a class="footer__socialred" href="https://www.instagram.com" target="_blank">
+                <picture>
+                    <source srcset="images/instagramwebp.webp" type="image/webp">
+                    <img class="picture__imgenlace" src="images/instagrampng.png" alt="Instagram" title="Instagram"
+                        loading="lazy">
+                </picture>
+            </a>
+
+            <a class="footer__socialred" href="https://www.facebook.com" target="_blank">
+            <picture>
+                <source srcset="images/facebookwebp.webp" type="image/webp">
+                <img class="picture__imgenlace" src="images/facebookpng.png" alt="Facebook" title="Facebook"
+                    loading="lazy">
+            </picture>
+            </a>
+
+            <a class="footer__socialred" href="https://www.tiktok.com" target="_blank">
+                <picture>
+                    <source srcset="images/tiktokwebp.webp" type="image/webp">
+                    <img class="picture__imgenlace" src="images/tiktokpng.png" alt="Tiktok" title="Tiktok"
+                        loading="lazy">
+                </picture>
+            </a>
+
+            <a class="footer__socialred" href="https://www.youtube.com" target="_blank">
+                <picture>
+                    <source srcset="images/youtubewebp.webp" type="image/webp">
+                    <img class="picture__imgenlace" src="images/youtubepng.png" alt="Youtube" title="YouTube"
+                        loading="lazy">
+                </picture>
+            </a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
