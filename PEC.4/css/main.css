@@ -510,8 +510,26 @@ h3 {
     font-size: 0.6em;
     font-style: italic;
     color: var(--color-primario-accion);
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
+@keyframes color {
+    0% {
+        color: var(--color-fondo-principal);
+    }
+
+    50% {
+        color: var(--color-primario-accion);
+    }
+
+    100% {
+        color: var(--color-primario-accion);
+    }
+}
 /* Dimensiones y estilos de los Contenedores */
 .div__carrusel-juego-infantil,
 .div__carrusel-juego-accion,
