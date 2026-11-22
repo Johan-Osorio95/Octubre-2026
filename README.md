@@ -48,9 +48,10 @@ flowchart LR
 - Cambié, en la página de Biblioteca, el nombre del videojuego por un botón "Jugar".
 - Cambié el Footer, para que no fuese tan sencillo: le agregué unos enlaces para brindar información, centré el texto "derechos reservados..." y cambié el nombre de las redes sociales por el logo de estas.
 - Alineé los enlaces de (menú, valoración, ayuda, ingresar) hacia la esquina superior izquierda, para agregar el nombre de la web (Gameverse).
+- Agregué imágenes que acompañan el estilo del diseño en las páginas de "Inicio de sesión" y "Centro de ayuda".
 - Dejé el logo centrado, entre el título y los enlaces (menú, valoración, ayuda, ingresar).
 - Añadí la página de Centro de ayuda, que no aparece en el diseño de Figma.
-- No incluí la flecha ▼ que el diseño muestra al final de Gratis y de Biblioteca.
+
 
 ## Diagrama de páginas y navegación
 
@@ -70,7 +71,6 @@ flowchart TD
     NAV -.->|"enlaces sin página (href vacío)"| PENDIENTES["CineGame · Novedades · Favoritos<br>Buscar · Carrito<br>Menú · Valoración"]
 ```
 
-![Diagrama de páginas y navegación de Gameverse](images/diagrama-navegacion.png)
 
 ## Estructura del proyecto
 
