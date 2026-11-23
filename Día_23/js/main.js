@@ -20,3 +20,20 @@ boton_azul.addEventListener("click", () => {
     message3.style.color = "blue";
 });
 
+//"Actividad 2"
+const PI = 3.14;
+let radio = 5;
+
+function areaCirculo(r) {
+    return PI * r * r;
+}
+
+console.log(areaCirculo(radio));
+
+//"Actividad 3"
+
+const boton = document.querySelector('#miBoton');
+
+boton.addEventListener('click', () => {
+    alert('¡Botón clickeado!');
+});
