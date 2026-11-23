@@ -13,34 +13,99 @@
 
     <!--Debe contener: nombre, email, teléfono, texto largo y un botón de enviar.
         Después decóralo de una manera agradable para el usuario.-->
+    <header class="header">
+        <h1>Actividad 20</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a class="header__a" href="index.html">Aquí mismo</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main class="main">
+    <main>
 
-        <div class="div__formulario">
-            <form method="POST" action="formulario" class="formulario">
+        <div class="contacto">
+            <form class="div__contacto" method="post" action="formulario">
 
                 <h1 class="main__h1">Comunicate con nosotros</h1>
 
                 <label for="nombre">Nombre:</label>
-                <input type="nombre" id="nombre" name="nombre" required>
+                <input type="nombre" id="nombre" name="nombre" placeholder="Primer y segundo nombre" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Correo eléctronico" required>
 
                 <label for="telefono">Teléfono:</label>
-                <input type="apellido" id="apellido" name="apellido" required>
+                <input type="tel" id="tel" name="telefono" placeholder="Teléfono personal" required>
 
                 <label for="comentario">Déjanos tu comentario:</label>
-                <textarea name="comentarios" id="comentarios"></textarea>
+                <textarea class="comentarios" name="comentarios" class="comentarios"
+                    placeholder="Déjanos tu comentario aquí."></textarea>
 
-                <div class="div__boton">
-                    <button class="boton">Enviar</button>
-                </div>
+                <input class="boton__contacto" type="button" value="Enviar">
 
             </form>
         </div>
+
+        <div class="registro">
+            <form class="div__registro" method="post" action="registro">
+
+                <h2>Punto de registro</h2>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="tu_Correo@correo.com" required>
+
+                <label for="repetir_email">Repite tu Email</label>
+                <input type="email" id="repetir-email" name="repetir_email" placeholder="Repite tu correo" required>
+
+                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="felcha-nacimiento" id="fecha-nacimiento" required>
+
+                <button class="boton__registro" type="button">Enviar</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form class="div__login" action="login" method="post">
+
+                <h2>Login</h2>
+
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="tu_Correo@correo.com" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Escribe tu contraseña" required>
+
+                <button class="boton__login">Continuar</button>
+            </form>
+        </div>
+
+        <div>
+            <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" list="lista-paises" required>
+
+                <datalist id="lista-paises">
+                    <option value="España"></option>
+                    <option value="México"></option>
+                    <option value="Argentina"></option>
+                    <option value="Chile"></option>
+                    <option value="Colombia"></option>
+                </datalist>
+        </div>
     </main>
 
+    <footer>
+        <p>&copy; 2026 - Todos los derechos reservados</p>
+    </footer>
 
 </body>
 
