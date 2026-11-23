@@ -19,8 +19,8 @@
     vertical-align: inherit;
     padding: 0.4rem;
     border: 1px solid;
-    box-shadow: 0 0 10px black;
-    background-color: white;
+    box-shadow: 0 0 10px var(--color-texto-negro);
+    background-color: var(--color-texto-blanco);
 }
 
 .div__formulario {
@@ -43,11 +43,11 @@ label {
 }
 
 input {
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px var(--color-texto-negro);
 }
 
 #comentarios{
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px var(--color-texto-negro);
     width: 92%;
 }
 .div__boton {
@@ -72,7 +72,7 @@ input {
 
 .boton:hover {
     background-color: #073c12;
-    color: white;
+    color: var(--color-texto-blanco);
     transform: scale(1.2);
 }
 

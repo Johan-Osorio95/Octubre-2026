@@ -3,7 +3,7 @@
     font-family: emoji;
     line-height: 1.8;
     background-color: rgb(49, 49, 51);
-    color: white;
+    color: var(--color-texto-blanco);
     display: flex;
     flex-direction: column;
     min-height: calc(150vh - 260px);
@@ -132,7 +132,7 @@ footer {
     font-size: 1.5em;
     font-family: emoji;
     background-color: rgb(15, 15, 55);
-    color: white;
+    color: var(--color-texto-blanco);
     line-height: 1.8;
     text-align: center;
     padding: 1rem;
@@ -152,7 +152,7 @@ footer {
     .header__ul {
         display: block;
         height: 60%;
-        background-color: black;
+        background-color: var(--color-texto-negro);
         text-align: center;
         width: 50%;
         padding: 3rem;

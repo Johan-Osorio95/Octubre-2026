@@ -10,7 +10,7 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #CAD5E2;
+    background-color: var(--color-fondo-principal);
 }
 
 /* __________________________________
@@ -18,8 +18,8 @@ body {
   |----------------------------------|*/
 
 header {
-    background-color: #8493A9;
-    box-shadow: 0rem 0rem 5rem 1.2rem black;
+    background-color: var(--color-fondo-secundario);
+    box-shadow: 0rem 0rem 5rem 1.2rem var(--color-texto-negro);
     position: sticky;
     z-index: 10;
     top: 0;
@@ -35,17 +35,17 @@ header {
 }
 
 .headernav {
-    color: black;
+    color: var(--color-texto-negro);
     font-size: 1.30rem;
     text-decoration: none;
     padding: 0.60rem;
     border-radius: 1rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color-texto-negro);
     transition: transform 0.2s, background-color 0.2s;
 }
 
 .headernav:hover {
-    background-color: #AB0A0A;
+    background-color: var(--color-primario-accion);
     transform: scale(1.05);
 }
 
@@ -62,12 +62,12 @@ header {
     margin: 5rem 0 0 20rem;
     padding: 3rem;
     box-shadow: 15px 0px 20px gray;
-    background-color: #8493A9;
+    background-color: var(--color-fondo-secundario);
 }
 
 .div__div-interno {
-    box-shadow: 4px 0px 15px black;
-    background-color: #CAD5E2;
+    box-shadow: 4px 0px 15px var(--color-texto-negro);
+    background-color: var(--color-fondo-principal);
 }
 
 .div__p {
@@ -78,8 +78,8 @@ header {
     line-height: 2.5rem;
     font-size: 1.5rem;
     text-align: center;
-    color: black;
-    text-shadow: 2px 2px 4px black;
+    color: var(--color-texto-negro);
+    text-shadow: 2px 2px 4px var(--color-texto-negro);
 }
 
 cite {
@@ -101,5 +101,5 @@ cite {
     box-shadow: 5px 0px 15px gray;
     display: flex;
     justify-content: center;
-    background-color: #8493A9;
+    background-color: var(--color-fondo-secundario);
 }

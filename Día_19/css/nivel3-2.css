@@ -78,7 +78,7 @@ h1 {
     width: 200px;
     height: 100px;
     margin: 2rem auto;
-    box-shadow: -8px 10px 20px black;
+    box-shadow: -8px 10px 20px var(--color-texto-negro);
     transform: rotateY(45deg) rotateX(25deg);
     background: linear-gradient(70deg, #1d344e, #e71640);
 }
@@ -87,7 +87,7 @@ h1 {
     width: 200px;
     height: 100px;
     margin: 2rem auto;
-    box-shadow: 10px -10px 20px black;
+    box-shadow: 10px -10px 20px var(--color-texto-negro);
     transform: rotateX(45deg) rotateY(45deg);
     background: linear-gradient(70deg, #1d5234, #2016e7);
 }
@@ -97,7 +97,7 @@ h1 {
     height: 100px;
     background-color: #cc6821;
     margin: 2rem auto;
-    box-shadow: -10px 15px 20px black;
+    box-shadow: -10px 15px 20px var(--color-texto-negro);
     transform: rotateY(45deg) rotateX(45deg);
     background: linear-gradient(70deg, #cc6821, #57ec89);
 }
@@ -113,5 +113,5 @@ h1 {
     box-shadow: 5px 0px 15px gray;
     display: flex;
     justify-content: center;
-    background-color: #8493A9;
+    background-color: var(--color-fondo-secundario);
 }

@@ -3,7 +3,7 @@
     width: 50vw;
     height: 50vh;
     background-color:rgb(70, 28, 28);
-    border: black solid;
+    border: var(--color-texto-negro) solid;
 }
 
 .nivel_1-2{

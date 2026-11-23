@@ -11,7 +11,7 @@ div {/**/
     margin: 20px;/*Esta línea modifica la distancia que hay entre la margen de los elementos que estan dentro del div*/
     padding: 20px;/*El (padding) es el espacio interior de un elemento: la distancia entre el contenido (el texto) y el borde.*/
     border-radius: 20px;/*Esta línea modifica la esquina del borde de los elementos que hay dentro del div*/
-    box-shadow: 2px 2px 2px black;/*Esta línea agrega sombra detrás de los elementos que hay dentro del div: 2px(derecha) 2px(abajo) 2px(todos)*/
+    box-shadow: 2px 2px 2px var(--color-texto-negro);/*Esta línea agrega sombra detrás de los elementos que hay dentro del div: 2px(derecha) 2px(abajo) 2px(todos)*/
     
 }
 

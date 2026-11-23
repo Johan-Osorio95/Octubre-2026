@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Gameverse: tienda y biblioteca de videojuegos.">
+    <meta property="og:title" content="Gameverse">
+    <meta property="og:description" content="Tienda y biblioteca de videojuegos.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://johansor.com/images/logogameversecirculo.png">
+    <meta property="og:url" content="https://johansor.com/">
+    <link rel="icon" href="images/logogameversecirculo.png" type="image/png">
+    <title>Gameverse</title>
+    <link rel='stylesheet' href='css/main.css'>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- BANNER -->
+
+    <div class="banner">
+        <img class="banner__hero" src="images/bannerredos.png" alt="re2">
+        <section class="banner__section">
+            <h1 class="banner__h1">GAMEVERSE</h1>
+            <img class="banner__logo" src="images/logogameversecirculo.png" alt="logo">
+            <div class="banner__botones">
+                <a class="botonb" href="">Menú</a>
+                <a class="botonb" href="">Valoración</a>
+                <a class="botonb" id="ayuda" href="centrodeayuda.html">Ayuda</a>
+                <a class="botonb" href="iniciosesion.html" aria-current="page">Ingresar</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- NAVEGADOR -->
+
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a class="headernav inicio" href="index.html">Inicio</a></li>
+                <li class="header__li"><a class="headernav genero" href="generos.html">Géneros</a></li>
+                <li class="header__li"><a class="headernav gratis" href="juegosgratis.html">Gratis</a></li>
+                <li class="header__li"><a class="headernav cinegame" href="">CineGame</a></li>
+                <li class="header__li"><a class="headernav novedades" href="">Novedades</a></li>
+                <li class="header__li"><a class="headernav bibioteca" href="biblioteca.html">Biblioteca</a></li>
+                <li class="header__li"><a class="headernav favoritos" href="">Favoritos</a></li>
+                <li class="header__li"><a class="headernav buscar" href="">Buscar</a></li>
+                <li class="header__li"><a class="headernav carrito" href="">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main__iniciosesion">
+
+        <div class="div__formulario">
+            <div class="div__cuerpo-formulario">
+                <h2 class="main__h1-centro-de-ayuda">Inicia sesión</h2>
+                <form class="formulario" method="POST" action="/action_page.php">
+
+                    <label for="email">Email</label>
+                    <input class="formulario__campo-de-texto" type="email" id="email" name="email" required>
+
+                    <label for="password">Contraseña</label>
+                    <input class="formulario__campo-de-texto" type="password" id="password" name="password" required>
+
+                    <div class="botones__in-se">
+                        <input class="boton" type="submit" value="Entrar">
+                        <a href="">Olvidé mi contraseña</a>
+                        <input class="boton" type="submit" value="Crear">
+                    </div>
+                </form>
+
+            </div>
+
+            <img class="marcusinicia" src="images/marcus_sin_fondo.png" alt="marcus">
+            <img class="itt-inicio" src="images/ittakestwoinicio.png" alt="Ittaketwo">
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <!-- FOOTER INFORMATIVO -->
+
+        <div class="footer__div footer__informativo">
+            <h2 class="footer__titulo-informacion-legal">INFORMACIÓN.</h2>
+            <a class="footer__enlace" href="" title="Terminos y condiciones">T & C</a>
+            <a class="footer__enlace" href="" title="Información legal">Info-Legal</a>
+            <a class="footer__enlace" href="" title="Información sobre nosotros">Info-GameVerse</a>
+            <a class="footer__enlace" href="" title="Tienda">Tienda</a>
+        </div>
+
+        <!-- FOOTER DERECHOS RESERVADOS -->
+
+        <div class="footer__div derechosreservados">
+            <p class="footer__p">&copy; 2026 - Todos los derechos reservados, las caratulas son usadas tan solo como
+                ejemplo en un proceso de práctica.</p>
+        </div>
+        <!-- FOOTER LOGO Y NOMBRE DE LA PÁGINA -->
+
+        <div class="footer__div logotipo">
+            <h2 class="footer__titulologotipo">GAMEVERSE</h2>
+            <picture>
+                <source srcset="images/logogameversecirculo.webp" type="image/webp">
+                <img class="footer__logo" src="images/logogameversecirculo.png" alt="Logo-Gameverse_footer"
+                    loading="lazy">
+            </picture>
+        </div>
+
+        <!-- FOOTER REDES SOCIALES -->
+
+        <div class="footer__div redsocial">
+
+            <h2 class="footer__titulosiguenos">SÍGUENOS</h2>
+
+            <a class="footer__socialred" href="https://www.instagram.com" target="_blank">
+                <picture>
+                    <source srcset="images/instagramwebp.webp" type="image/webp">
+                    <img class="picture__imgenlace" src="images/instagrampng.png" alt="Instagram" title="Instagram"
+                        loading="lazy">
+                </picture>
+            </a>
+
+            <a class="footer__socialred" href="https://www.facebook.com" target="_blank">
+            <picture>
+                <source srcset="images/facebookwebp.webp" type="image/webp">
+                <img class="picture__imgenlace" src="images/facebookpng.png" alt="Facebook" title="Facebook"
+                    loading="lazy">
+            </picture>
+            </a>
+
+            <a class="footer__socialred" href="https://www.tiktok.com" target="_blank">
+                <picture>
+                    <source srcset="images/tiktokwebp.webp" type="image/webp">
+                    <img class="picture__imgenlace" src="images/tiktokpng.png" alt="Tiktok" title="Tiktok"
+                        loading="lazy">
+                </picture>
+            </a>
+
+            <a class="footer__socialred" href="https://www.youtube.com" target="_blank">
+                <picture>
+                    <source srcset="images/youtubewebp.webp" type="image/webp">
+                    <img class="picture__imgenlace" src="images/youtubepng.png" alt="Youtube" title="YouTube"
+                        loading="lazy">
+                </picture>
+            </a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
