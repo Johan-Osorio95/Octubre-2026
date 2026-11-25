@@ -10,52 +10,54 @@
 </head>
 
 <body class="body">
-            <header class="header">
-            <div class="div__form">
-                <form class="buscador" action="/buscar" method="get">
-                    <label class="label__buscador" for="search-input"></label>
-                    <input type="search" id="search-input" name="q" placeholder="Escribe aquí para buscar...">
-                    <button class="boton__buscar" type="submit"><img class="buscador__lupa" src="images/lupa.png"
-                            alt="buscador"></button>
-                </form>
-            </div>
-            <div class="div__navegador">
-                <h1 class="divnavegador__h1">CaricArte</h1>
-                <ul class="header__ul">
-                    <il class="header__il"><a class="header__a" href="">1980</a></il>
-                    <il class="header__il"><a class="header__a" href="">2000</a></il>
-                    <il class="header__il"><a class="header__a" href="">2010</a></il>
-                    <il class="header__il"><a class="header__a" href="">2020</a></il>
-                </ul>
-            </div>
-        </header>
-        
+
+    <!-- ACTIVIDAD 24 -->
     <main class="main">
-        <div class="div__listacaricaturas">
-            <a class="" href="">Tom & Jerry</a>
-            <a class="" href="">Coraje</a>
-            <a class="" href="">Looney Toones</a>
-            <a class="" href="">Ed, doble D & Edy</a>
-            <a class="" href="">Jony Bravo</a>
-            <a class="" href="">Pinky & Cerebro</a>
+
+        <!-- NIVEL 1 -->
+        <div class="fotopantalla">
+            <div>
+                <h1 class="div__h1">Nivel 1</h1>
+            </div>
+
+            <picture>
+                <source srcset="images/actividad24.webp" type="image/webp">
+                <img src="images/actividad24.png" alt="actividad24" title="Nivel1">
+            </picture>
         </div>
-    </main>
-    <footer class="footer">
-        
+
+        <div class="div">
+            <h1 class="div__h1">Nivel 2</h1>
+        </div>
+
+        <!-- NIVEL 2 -->
+        <div class="div__texto">
+
+            <textarea id="texto" placeholder="Escribe algo..."></textarea>
+
+            <button id="boton">></button>
+
+            <p id="addtexto"></p>
+
+        </div>
+
         <div>
-            <h1 class="caricarte">CaricArte</h1>
+            <h1 class="div__h1">Nivel 3</h1>
         </div>
-        <div class="footer__redessociales">
-            <h1 class="footer__siguenos">Siguenos:</h1>
-            <a class="Instagram" href=""> <img src="images/instagram.png" alt=""></a>
-            <a class="FaceBook" href=""> <img src="images/facebook.png" alt=""></a>
-            <a class="Youtube" href=""> <img src="images/youtube.png" alt=""></a>
-            <a class="TikTok" href=""> <img src="images/tiktok.png" alt=""></a>
+
+        <!-- NIVEL 3 -->
+        <div class="div__suma">
+            <input id="num1" type="number" placeholder="Primer número: ">
+            <input id="num2" type="number" placeholder="Segundo número: ">
+            <button id="botonaction">Acción</button>
+            <p id="resultadosuma" placeholder="Resultado"></p>
         </div>
-        <div class="footer__derechos">
-            <p class="footer__derechos-p">&copy; 2026 - Los elementos usados aquí, son para fines educativos - Todos los derechos reservados.</p>
-        </div>
-        
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__derechos-p">&copy; 2026 - Los elementos usados aquí, son para fines educativos - Todos los
+            derechos reservados.</p>
     </footer>
 
 </body>

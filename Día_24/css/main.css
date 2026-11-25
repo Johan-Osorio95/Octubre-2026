@@ -10,10 +10,13 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 
 .main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -25,133 +28,96 @@
     position: fixed;
 }
 
-.buscador {
-    display: flex;
-    align-items: center;
+.div__h1 {
+    color: bisque;
+    text-align: center;
 }
 
-#search-input {
-    border-radius: 5rem;
-    border: 1px solid;
-    padding: 0.5rem;
+textarea {
+    width: 15rem;
+    height: 20rem;
 }
 
-.buscar {
-    display: flex;
-    align-items: center;
-}
-
-.div__form {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 3rem;
-}
-
-.boton__buscar {
+#boton {
     margin: 0%;
-    padding: 0.2rem;
-    background-color: white;
-    border-radius: 0 5rem 0 5rem;
+    padding: 0.5rem;
+    height: 4rem;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    background-color: rgb(88, 4, 4);
+    color: aliceblue;
+    border-radius: 1rem;
     cursor: pointer;
 }
 
-.boton__buscar:hover {
-    background-color: white;
+#botonaction {
+    display: flex;
+    align-items: center;
+    background-color: rgb(88, 4, 4);
+    color: aliceblue;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#boton:hover,
+#botonaction:hover {
+    background-color: rgb(140, 5, 5);
     transform: scale(1.2);
 }
 
-.boton__buscar:active {
+#boton:active,
+#botonaction:active {
     transform: scale(1.5);
 }
 
-.buscador__lupa {
-    width: 2rem;
-    margin: 0%;
-    background-color: none;
-}
-
-.div__navegador {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-}
-
-.divnavegador__h1 {
-    text-shadow: 2px 8px 3px red;
-}
-
-.header__a {
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Courier New', Courier, monospace;
-    border-bottom: 1px solid black;
-    border-radius: 5rem;
+#botonaction {
     padding: 0.5rem;
-    box-shadow: 0 10px 5px red;
-    transition: color 0.3s ease;
 }
 
-.header__a:hover {
-    background-color: rgb(97, 185, 226);
-    ;
-    box-shadow: 0 10px 5px rgb(92, 201, 251);
-    ;
-    color: black;
-    font-weight: bold;
+#addtexto {
+    width: 15rem;
+    height: 20rem;
+    background-color: gray;
 }
 
-.div__listacaricaturas {
+#resultadosuma {
+    background-color: rgb(203, 201, 201);
+    width: 10rem;
+    height: 3rem;
+        display: flex;
+    align-items: center;
+}
+#num1,
+#num2,
+#botonaction,
+#resultadosuma {
+    padding: 1.2rem;
+    border-radius: 1rem;
+}
+div{
+    margin: 2rem;
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+}
+.div__texto {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    position: fixed;
-    top: 10rem;
-    left: 8rem;
+}
+.div__suma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+.fotopantalla {
+    text-align: center;
 }
 
 .footer {
     width: 100%;
     height: 5rem;
-    border-top: 1px solid;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-flow: row;
-    font-size: 1em;
-}
-
-.footer__derechos {
-    grid-column: 1 / 5;
-    grid-row: 2 / 3;
-    display: flex;
-    justify-content: center;
-
-}
-
-.footer__derechos-p {
-    margin: 2rem;
-    font-size: 1.2em;
-}
-
-.footer__redessociales {
-    grid-column: 4 / 6;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
-
-.caricarte {
-    margin-left: 1.5rem;
-}
-
-img {
-    width: 1.5rem;
-    display: flex;
-    flex-direction: row;
-}
-
-img:hover {
-    transform: scale(1.5);
+    color: gray;
+    text-align: center;
 }
